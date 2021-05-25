@@ -1,5 +1,5 @@
 #!/bin/bash
 
-iverilog ../verilog/adder.v adder_sim.v
+iverilog ../../../../tools/yosys/techlibs/ice40/cells_sim.v ../verilog/adder_dsp.v adder_sim.v
 vvp a.out
 gtkwave adder.vcd
