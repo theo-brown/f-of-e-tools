@@ -49,7 +49,7 @@ module blink(led);
 	 */
 	genvar i;
 	generate
-		for (i = 1; i < `kFofE_LFOSC_CLOCK_DIVIDER_FOR_1Hz; i = i+1) 
+		for (i = 1; i < `kFofE_LFOSC_CLOCK_DIVIDER_FOR_1Hz; i = i+1)
 		begin: dff_gen_label
 			dff dffInstance (
 						.D(notQ[i]),

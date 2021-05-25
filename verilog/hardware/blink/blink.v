@@ -1,4 +1,4 @@
-`define	kFofE_HFOSC_CLOCK_DIVIDER_FOR_1Hz	24000000
+`define	kFofE_HFOSC_CLOCK_DIVIDER_FOR_1Hz 	24000000
 
 module blink(led);
 	output		led;
