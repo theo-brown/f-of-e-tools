@@ -1,0 +1,48 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000026c9cb0a4d0 .scope module, "simpleTestbench" "simpleTestbench" 2 3;
+ .timescale -9 -9;
+v0000026c9c9628b0_0 .var "signalIn", 0 0;
+v0000026c9c962950_0 .net "singnalOut", 0 0, L_0000026c9cb09940;  1 drivers
+S_0000026c9c962720 .scope module, "simpleInstance" "simple" 2 6, 3 4 0, S_0000026c9cb0a4d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "inSignal";
+    .port_info 1 /OUTPUT 1 "outSignal";
+L_0000026c9cb09940 .functor BUFZ 1, v0000026c9c9628b0_0, C4<0>, C4<0>, C4<0>;
+v0000026c9cb0a660_0 .net "inSignal", 0 0, v0000026c9c9628b0_0;  1 drivers
+v0000026c9cb098a0_0 .net "outSignal", 0 0, L_0000026c9cb09940;  alias, 1 drivers
+    .scope S_0000026c9cb0a4d0;
+T_0 ;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026c9c9628b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000026c9c9628b0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026c9c9628b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000026c9c9628b0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0000026c9cb0a4d0;
+T_1 ;
+    %vpi_call 2 30 "$dumpfile", "simpleTestbench.vcd" {0 0 0};
+    %vpi_call 2 31 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "simpleTestbench.v";
+    "simple.v";
