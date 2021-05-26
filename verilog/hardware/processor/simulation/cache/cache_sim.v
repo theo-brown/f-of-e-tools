@@ -1,4 +1,4 @@
-module cache_tb();
+module top();
 	reg clk = 0;
 
 	reg[31:0] addr;
@@ -28,7 +28,7 @@ module cache_tb();
 	 #1 clk = ~clk;
 
 	initial begin
-		$dumpfile ("cache.vcd");
+		$dumpfile ("cache_sim.vcd");
 	 	$dumpvars;
 
 	 	#5
