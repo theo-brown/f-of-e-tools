@@ -46,3 +46,6 @@ def sorts_per_second(filename):
     total_time = time[-1] - time[0]
     xor = np.logical_xor(signal[:-1], signal[1:])
     return xor.sum()/total_time
+
+def time_per_sort(filename):
+    return 1/sorts_per_second(filename)
