@@ -31,7 +31,7 @@ always
  #0.5 clk = ~clk;
 
 initial begin
-	$dumpfile ("adder.vcd");
+	$dumpfile ("alu_sim.vcd");
  	$dumpvars;
 
  	//reg[31:0] A, B;
