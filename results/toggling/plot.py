@@ -48,3 +48,9 @@ def sorts_per_second(filename):
 
 def time_per_sort(filename):
     return 1/sorts_per_second(filename)
+
+
+file = "bsort_a2.csv"
+print(sorts_per_second(file))
+print(time_per_sort(file))
+plot_digital(file)
