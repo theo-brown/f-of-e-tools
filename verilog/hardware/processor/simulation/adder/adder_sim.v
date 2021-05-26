@@ -16,7 +16,7 @@ always
  #0.5 clk = ~clk;
 
 initial begin
-	$dumpfile ("adder.vcd");
+	$dumpfile ("adder_sim.vcd");
  	$dumpvars;
 
  	input1 = 32'd0;
