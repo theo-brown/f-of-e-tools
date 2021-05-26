@@ -40,7 +40,7 @@ module adder(input1, input2, out);
       .CI(dsp_ci), .O(dsp_o), .CO(dsp_co)
       );
 
-      initial begin
+      always @(input1, input2) begin
      	 //default for the dsp
       	 dsp_ce = 1;
 	 dsp_c = input1[31:16];
@@ -62,6 +62,7 @@ module adder(input1, input2, out);
     	 dsp_oloadtop = 0;
     	 dsp_oloadbot = 0;
     	 dsp_ci = 0;
-	 out = dsp_o;
        end
+	
+	assign out = dsp_o;
 endmodule

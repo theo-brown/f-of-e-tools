@@ -34,7 +34,11 @@ initial begin
 
  	#5
 
- 	$finish;
+	input1 = 32'h0000FFFF;
+	input2 = 32'h03001000; 	
+
+	#5
+	$finish;
 end
 
 endmodule
