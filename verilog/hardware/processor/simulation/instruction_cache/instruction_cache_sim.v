@@ -1,4 +1,4 @@
-module instruction_cache_tb();
+module top();
 	reg clk = 0;
 	reg[31:0] addr;
 	wire[31:0] out;

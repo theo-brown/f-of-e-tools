@@ -55,7 +55,7 @@ module main_memory(clk, block_addr, readmem, writemem, data_write, data_read);
 	reg[255:0] main_mem[0:511]; //16 KiB main memory
 
 	initial begin
-		$readmemh("simulation/program.hex", main_mem);
+		$readmemh("verilog/program.hex", main_mem);
 	end
 
 	always @(posedge clk) begin
