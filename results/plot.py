@@ -10,11 +10,11 @@ def plot_power(filename, figure=None):
     if figure is None:
         figure = plt.figure()
     data = np.genfromtxt(filename, delimiter=",", skip_header=8)
-    plt.plot(data[0], 1e3*supply_voltage*data[1], label="filename")
+    plt.plot(data[:, 0], 1e3*supply_voltage*data[:, 1], label=filename)
 
-    plt.ylim(0, 4)
-    plt.yticks(np.arange(0, 4.5, 0.5))
-    figure.axes[0].yaxis.set_minor_locator((AutoMinorLocator(5)))
+    #plt.ylim(0, 4)
+    #plt.yticks(np.arange(0, 4.5, 0.5))
+    #figure.axes[0].yaxis.set_minor_locator((AutoMinorLocator(5)))
     plt.grid(which='major', axis='y')
 
     plt.ylabel("Power (mW)")
@@ -24,11 +24,11 @@ def plot_power(filename, figure=None):
     
     plt.show()
     
-def plot_digital(filename, figure=None):
+def plot_digital(filename, figure=None, offset=0):
     if figure is None:
         figure = plt.figure()
-    data = np.genfromtxt(filename, delimiter=",", skip_header=1)
-    plt.plot(data[0], data[1], label="filename")
+    data = np.genfromtxt(filename, delimiter=",", skip_header=8)
+    plt.plot(data[:, 0], data[:, 1] + offset, label=filename)
     
     plt.grid(axis='x')
 
@@ -38,3 +38,11 @@ def plot_digital(filename, figure=None):
     plt.title("Output signal on pin A2")
     
     plt.show()
+
+def sorts_per_second(filename):
+    data = np.genfromtxt(filename, delimiter=",", skip_header=8)
+    time = data[:, 0]
+    signal = data[:, 1]
+    total_time = time[-1] - time[0]
+    xor = np.logical_xor(signal[:-1], signal[1:])
+    return xor.sum()/total_time
