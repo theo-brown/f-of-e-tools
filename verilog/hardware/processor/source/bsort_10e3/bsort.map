@@ -1,0 +1,82 @@
+Archive member included to satisfy reference by file (symbol)
+
+/data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+                              bsort.o (memcpy)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+
+.text           0x0000000000000000     0x1000
+                0x0000000000000000                _text = .
+ *(.text)
+ .text          0x0000000000000000       0x10 init.o
+                0x0000000000000000                _start
+ .text          0x0000000000000010      0x1dc bsort.o
+                0x0000000000000010                main
+ .text          0x00000000000001ec      0x11c /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+                0x00000000000001ec                memcpy
+                0x0000000000001000                . = 0x1000
+ *fill*         0x0000000000000308      0xcf8 
+ *(.strings)
+                0x0000000000001000                _etext = .
+
+.rodata         0x0000000000001000       0x3b
+ .rodata        0x0000000000001000       0x3b bsort.o
+
+.rela.dyn       0x000000000000103c        0x0
+ .rela.text     0x000000000000103c        0x0 init.o
+
+.data           0x000000000000103b        0x0
+ *(.data)
+ .data          0x000000000000103b        0x0 init.o
+ .data          0x000000000000103b        0x0 bsort.o
+ .data          0x000000000000103b        0x0 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.bss            0x000000000000103b        0x0
+ *(.bss)
+ .bss           0x000000000000103b        0x0 init.o
+ .bss           0x000000000000103b        0x0 bsort.o
+ .bss           0x000000000000103b        0x0 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+LOAD init.o
+LOAD bsort.o
+LOAD /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a
+LOAD /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libm.a
+LOAD /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a
+OUTPUT(bsort elf32-littleriscv)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 bsort.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_frame    0x0000000000000000       0x20
+ .debug_frame   0x0000000000000000       0x20 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_info     0x0000000000000000      0xae6
+ .debug_info    0x0000000000000000      0xae6 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_abbrev   0x0000000000000000      0x25e
+ .debug_abbrev  0x0000000000000000      0x25e /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_loc      0x0000000000000000      0x280
+ .debug_loc     0x0000000000000000      0x280 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_ranges   0x0000000000000000       0x28
+ .debug_ranges  0x0000000000000000       0x28 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_line     0x0000000000000000      0x50d
+ .debug_line    0x0000000000000000      0x50d /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+
+.debug_str      0x0000000000000000      0x52c
+ .debug_str     0x0000000000000000      0x52c /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+                                        0x58f (size before relaxing)
