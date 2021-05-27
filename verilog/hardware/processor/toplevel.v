@@ -47,6 +47,7 @@ module top (led);
 	wire		clk_proc;
 	wire		data_clk_stall;
 
+	wire 		refclk;
 	wire		clk;
 	reg		ENCLKHF		= 1'b1;	// Plock enable
 	reg		CLKHF_POWERUP	= 1'b1;	// Power up the HFOSC circuit
@@ -54,12 +55,43 @@ module top (led);
 
 	/*
 	 *	Use the iCE40's hard primitive for the clock source.
+	 defparam OSCInst0.CLKHF_DIV = "0b00";
 	 */
-	SB_HFOSC #(.CLKHF_DIV("0b11")) OSCInst0 (
+	SB_HFOSC #(.CLKHF_DIV("0b00")) OSCInst0 (
 		.CLKHFEN(ENCLKHF),
 		.CLKHFPU(CLKHF_POWERUP),
-		.CLKHF(clk)
+		.CLKHF(refclk)
 	);
+
+// try and set up a PLL
+// 48MHz input, 8Mhz output (8 is too low for PLL?)
+SB_PLL40_CORE #(
+								.FEEDBACK_PATH("SIMPLE"),
+								.DIVR(4'b0000),         // DIVR =  0
+								.DIVF(7'b0000111),      // DIVF =  7
+								.DIVQ(3'b110),          // DIVQ =  6
+								.FILTER_RANGE(3'b110)   // FILTER_RANGE = 6
+        ) uut (
+                .LOCK(locked),
+                .RESETB(1'b1),
+                .BYPASS(1'b0),
+                .REFERENCECLK(refclk),
+                .PLLOUTCORE(clk)
+                );
+
+/*
+SB_PLL40_CORE OSCInst1 (
+	.REFERENCECLK(refclk)
+	.PLLOUTGLOBAL(clk)
+	.PLLOUTCORE
+	)
+defparam OSCInst1.FEEDBACK_PATH("SIMPLE"),
+defparam OSCInst1.DIVR(4'b0010),         // DIVR =  2
+defparam OSCInst1.DIVF(7'b0010011),      // DIVF = 19
+defparam OSCInst1.DIVQ(3'b101),          // DIVQ =  5
+defparam OSCInst1.FILTER_RANGE(3'b011)   // FILTER_RANGE = 3
+
+*/
 
 	/*
 	 *	Memory interface

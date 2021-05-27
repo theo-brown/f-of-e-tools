@@ -69,3 +69,12 @@ SB_PLL40_CORE #(
 .DIVQ(3'b101),          // DIVQ =  5
 .FILTER_RANGE(3'b100)   // FILTER_RANGE = 4
 */
+
+
+/* 128 to 16 (48 to 6)
+.FEEDBACK_PATH("SIMPLE"),
+.DIVR(4'b0000),         // DIVR =  0
+.DIVF(7'b0000111),      // DIVF =  7
+.DIVQ(3'b110),          // DIVQ =  6
+.FILTER_RANGE(3'b110)   // FILTER_RANGE = 6
+*/
