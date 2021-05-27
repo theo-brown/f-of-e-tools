@@ -65,7 +65,9 @@ module top (led);
 	);
 
 // try and set up a PLL
-// 48MHz input, 16Mhz output (16 is too high for processor?)
+// 48MHz input, 16Mhz output, too high for processor
+// build a divider circuit
+
 SB_PLL40_CORE #(
 								.FEEDBACK_PATH("SIMPLE"),
 								.DIVR(4'b0010),         // DIVR =  2

@@ -4,7 +4,8 @@ module blink(led);
 	output		led;
 
 	wire 		refclk;
-	wire		clk;
+	wire		pclk;
+	wire    clk;
 	wire 		locked;
 
 	reg		LEDstatus = 1;
@@ -33,8 +34,14 @@ module blink(led);
 	                .RESETB(1'b1),
 	                .BYPASS(1'b0),
 	                .REFERENCECLK(refclk),
-	                .PLLOUTCORE(clk)
+	                .PLLOUTCORE(pclk)
 	                );
+
+	SB_DFF SB_DFF_inst (
+									.Q(clk), 	// output clk
+									.C(pclk)	// input clock from pll
+									.D(~clk), 		// not Q = clk
+									);
 
 	/*
 	 *	Blinks LED at approximately 1Hz. The constant kFofE_CLOCK_DIVIDER_FOR_1Hz
