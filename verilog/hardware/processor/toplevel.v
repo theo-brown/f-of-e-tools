@@ -50,6 +50,8 @@ module top (led);
 	wire 		refclk;
 	wire		clk;
 	wire		locked;
+	wire		pclk;
+
 	reg		ENCLKHF		= 1'b1;	// Plock enable
 	reg		CLKHF_POWERUP	= 1'b1;	// Power up the HFOSC circuit
 
@@ -68,7 +70,7 @@ module top (led);
 // 48MHz input, 16Mhz output, too high for processor
 // build a divider circuit
 
-SB_PLL40_CORE #(
+	SB_PLL40_CORE #(
 								.FEEDBACK_PATH("SIMPLE"),
 								.DIVR(4'b0010),         // DIVR =  2
 								.DIVF(7'b0111111),      // DIVF =  63
@@ -79,8 +81,18 @@ SB_PLL40_CORE #(
                 .RESETB(1'b1),
                 .BYPASS(1'b0),
                 .REFERENCECLK(refclk),
-                .PLLOUTCORE(clk)
+                .PLLOUTCORE(pclk)
                 );
+
+	// divide pclk by 2 with DFF, may need to addign this to global buffer
+	// or maybe this is automatic?
+	// clk: 8MHz output
+
+	SB_DFF SB_DFF_inst (
+											.Q(clk), 	// output clk
+											.C(pclk),	// input clock from pll
+											.D(~clk) 	// D = not clk - not Q
+											);
 
 /*
 SB_PLL40_CORE OSCInst1 (

@@ -5,7 +5,7 @@ module blink(led);
 
 	wire 		refclk;
 	wire		pclk;
-	wire   		clk;
+	wire   	clk;
 	wire 		locked;
 
 	reg		LEDstatus = 1;
@@ -36,14 +36,15 @@ module blink(led);
 	                .REFERENCECLK(refclk),
 	                .PLLOUTCORE(pclk)
 	                );
-	
+
 	// divide pclk by 2 with DFF, may need to addign this to global buffer
 	// or maybe this is automatic?
-	 
+	// clk = 12MHz
+
 	SB_DFF SB_DFF_inst (
 									.Q(clk), 	// output clk
 									.C(pclk),	// input clock from pll
-									.D(~clk) 		// not Q = clk
+									.D(~clk) 	// D = not clk - not Q
 									);
 
 	/*
