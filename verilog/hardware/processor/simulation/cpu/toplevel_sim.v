@@ -41,19 +41,10 @@
  *	Top level entity, linking cpu with data and instruction memory.
  */
 
-module top (input reg clk, output out_value);
+module top (input clk, output [7:0] led);
 	wire		clk_proc;
 	wire		data_clk_stall;
-
-	reg [7:0] led;
 	
-	assign out_value = led[0];
-
-	always @(posedge clk)
-	begin
-		$display("LED: %d\n", out_value);
-	end
-
 	/*
 	 *	Memory interface
 	 */

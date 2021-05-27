@@ -1,9 +1,10 @@
-#include <iostream>
+#include <stdio.h>
 #include <verilated.h>
 #include "Vtoplevel_sim.h"
 
 vluint64_t vtime = 0;
 bool clk = false;
+int led = 255;
 
 int main(int argc, char** argv, char** env)
 {
@@ -12,11 +13,14 @@ int main(int argc, char** argv, char** env)
 
 	while (!Verilated::gotFinish())
 	{
-		if (vtime % 10 == 1) {
-			clk = not clk;
-			top->clk = int(clk);
-		}
+		clk = not clk;
+		top->clk = int(clk);
 		top->eval();
+		if (led != int(top->led))
+		{
+			led = int(top->led);
+			printf("%i\n", led);
+		}
 		vtime++;
 	}
 
