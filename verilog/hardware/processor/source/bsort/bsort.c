@@ -1,11 +1,12 @@
+#define NUM_SORTS 1000
+
 int main(void)
 {
 	volatile unsigned int *output_register = (unsigned int *) 0x2000;
-	unsigned char output = 0xFF;
 	const int bsort_input_len = 0x3b;
-	*output_register = output;
+	*output_register = 0xFF;
 
-	while(1)
+	for (int j = 0; j < NUM_SORTS; j++)
 	{
 		char bsort_input[] = {0x53, 0x69, 0x6e, 0x67, 0x20, 0x74, 0x6f, 0x20, 0x6d, 0x65,
 				      0x20, 0x6f, 0x66, 0x20, 0x74, 0x68, 0x65, 0x20, 0x6d, 0x61,
@@ -31,11 +32,9 @@ int main(void)
 
 			maxindex--;
 		}
-
-		if (output == 0xFF) output = 0x00;
-		else output = 0xFF;
-		*output_register = output;
 	}
+
+	*output_register = 0x00;
 
 	return 0;
 }
