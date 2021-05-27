@@ -74,7 +74,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		.out(adder_o)
 		);
 	
-	always @(ALUctl, A, B) begin
+	always @(ALUctl, A, B, adder_o) begin
 		case (ALUctl[3:0])
 			/*
 			 *	AND (the fields also match ANDI and LUI)
