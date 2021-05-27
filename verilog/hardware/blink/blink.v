@@ -1,4 +1,4 @@
-`define	kFofE_HFOSC_CLOCK_DIVIDER_FOR_1Hz 	24000000
+`define	kFofE_HFOSC_CLOCK_DIVIDER_FOR_1Hz 	12000000
 
 module blink(led);
 	output		led;
@@ -11,7 +11,7 @@ module blink(led);
 	 *	Creates a 48MHz clock signal from
 	 *	internal oscillator of the iCE40
 	 */
-	SB_HFOSC OSCInst0 (
+	SB_HFOSC #(.CLKHF_DIV("0b01")) OSCInst0 (
 		.CLKHFPU(1'b1),
 		.CLKHFEN(1'b1),
 		.CLKHF(clk)
