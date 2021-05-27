@@ -17,12 +17,12 @@ Linker script and memory map
  *(.text)
  .text          0x0000000000000000       0x10 init.o
                 0x0000000000000000                _start
- .text          0x0000000000000010      0x1b0 bsort.o
+ .text          0x0000000000000010      0x1b4 bsort.o
                 0x0000000000000010                main
- .text          0x00000000000001c0      0x11c /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
-                0x00000000000001c0                memcpy
+ .text          0x00000000000001c4      0x11c /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libc.a(lib_a-memcpy.o)
+                0x00000000000001c4                memcpy
                 0x0000000000001000                . = 0x1000
- *fill*         0x00000000000002dc      0xd24 
+ *fill*         0x00000000000002e0      0xd20 
  *(.strings)
                 0x0000000000001000                _etext = .
 
