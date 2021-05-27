@@ -15,14 +15,14 @@ module blink(led);
 	SB_HFOSC OSCInst0 (
 		.CLKHFPU(1'b1),
 		.CLKHFEN(1'b1),
-		.CLKHF(reflck)
+		.CLKHF(refclk)
 	);
 
 	// try and set up a PLL
 	// 48MHz input, 16Mhz output
 	SB_PLL40_CORE #(
 	                .FEEDBACK_PATH("SIMPLE"),
-									.DIVR(4'b0010),         // DIVR =  2
+			.DIVR(4'b0010),         // DIVR =  2
 	                .DIVF(7'b0111111),      // DIVF = 63
 	                .DIVQ(3'b110),          // DIVQ =  6
 	                .FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
