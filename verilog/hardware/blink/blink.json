@@ -9657,7 +9657,7 @@
     "blink": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "blink.v:3.1-55.10"
+        "src": "blink.v:3.1-57.10"
       },
       "ports": {
         "led": {
@@ -9673,7 +9673,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -9720,7 +9720,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:15.11-19.3"
+            "src": "blink.v:17.11-21.3"
           },
           "port_directions": {
             "CLKHF": "output",
@@ -9740,7 +9740,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9762,7 +9762,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9784,7 +9784,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9806,7 +9806,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9828,7 +9828,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9850,7 +9850,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9872,7 +9872,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9894,7 +9894,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9916,7 +9916,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9938,7 +9938,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9960,7 +9960,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -9982,7 +9982,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10004,7 +10004,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10026,7 +10026,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10048,7 +10048,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10070,7 +10070,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10092,7 +10092,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10114,7 +10114,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10136,7 +10136,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10158,7 +10158,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10180,7 +10180,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10202,7 +10202,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10224,7 +10224,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10246,7 +10246,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10268,7 +10268,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10290,7 +10290,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -10311,7 +10311,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10332,7 +10332,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10353,7 +10353,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10374,7 +10374,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10395,7 +10395,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10416,7 +10416,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10437,7 +10437,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10458,7 +10458,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10479,7 +10479,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10500,7 +10500,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10521,7 +10521,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10542,7 +10542,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10563,7 +10563,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10584,7 +10584,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10605,7 +10605,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10626,7 +10626,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10647,7 +10647,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10668,7 +10668,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10689,7 +10689,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10710,7 +10710,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10731,7 +10731,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10752,7 +10752,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10773,7 +10773,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10794,7 +10794,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10815,7 +10815,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10836,7 +10836,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10857,7 +10857,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10878,7 +10878,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10899,7 +10899,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10920,7 +10920,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11742,7 +11742,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11764,7 +11764,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11786,7 +11786,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11808,7 +11808,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11830,7 +11830,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11852,7 +11852,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:41.2-49.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "blink.v:43.2-51.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11875,7 +11875,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11900,7 +11900,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11925,7 +11925,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11950,7 +11950,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11975,7 +11975,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12000,7 +12000,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12025,7 +12025,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12050,7 +12050,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12075,7 +12075,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12100,7 +12100,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12125,7 +12125,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12150,7 +12150,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12175,7 +12175,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12200,7 +12200,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12225,7 +12225,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12250,7 +12250,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12275,7 +12275,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12300,7 +12300,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12325,7 +12325,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12350,7 +12350,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12375,7 +12375,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12400,7 +12400,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12425,7 +12425,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12450,7 +12450,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12475,7 +12475,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12500,7 +12500,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12525,7 +12525,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12550,7 +12550,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12575,7 +12575,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12600,7 +12600,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12625,7 +12625,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12648,7 +12648,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12669,7 +12669,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12690,7 +12690,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12711,7 +12711,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12732,7 +12732,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12753,7 +12753,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12774,7 +12774,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12795,7 +12795,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12816,7 +12816,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12837,7 +12837,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12858,7 +12858,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12879,7 +12879,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12900,7 +12900,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12921,7 +12921,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12942,7 +12942,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12963,7 +12963,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12984,7 +12984,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13005,7 +13005,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13026,7 +13026,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13047,7 +13047,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13068,7 +13068,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13089,7 +13089,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13110,7 +13110,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13131,7 +13131,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13152,7 +13152,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13173,7 +13173,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13194,7 +13194,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13215,7 +13215,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13236,7 +13236,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13257,7 +13257,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13303,7 +13303,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13330,7 +13330,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.12-35.19"
+            "src": "blink.v:31.12-37.19"
           },
           "port_directions": {
             "BYPASS": "input",
@@ -13353,7 +13353,7 @@
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "blink.v:8.7-8.16"
+            "src": "blink.v:10.7-10.16"
           }
         },
         "LEDstatus_SB_LUT4_O_I3": {
@@ -13375,7 +13375,7 @@
           "hide_name": 0,
           "bits": [ 58, 56, 52, 50, 48, 46, 44, 42, 40, 38, 36, 34, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 122, 121, 120, 125, 124, 123, 54, 32, 10, 8 ],
           "attributes": {
-            "src": "blink.v:9.13-9.18"
+            "src": "blink.v:11.13-11.18"
           }
         },
         "count_SB_DFFSR_Q_31_D": {
@@ -13383,7 +13383,7 @@
           "bits": [ 57, 60, 117, 113, 111, 109, 107, 88, 65, 63, 105, 104, 102, 100, 98, 96, 94, 92, 90, 86, 84, 82, 80, 78, 76, 74, 72, 70, 68, 118, 116, 119 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:49.21-49.23"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:49.21-49.23"
           }
         },
         "count_SB_DFFSR_Q_D": {
@@ -13391,7 +13391,7 @@
           "bits": [ 57, 55, 51, 49, 47, 45, 43, 41, 39, 37, 35, 33, 29, 27, 25, 23, 21, 19, 17, 15, 13, 11, 131, 130, 129, 128, 127, 126, 53, 31, 9, 7 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
           }
         },
         "count_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
@@ -13399,7 +13399,7 @@
           "bits": [ "0", 58, 155, 151, 150, 149, 148, 147, 146, 145, 144, 142, 141, 140, 139, 138, 137, 136, 135, 134, 161, 160, 159, 158, 157, 156, 154, 143, 133, 132, 153, 152 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:47.13-47.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "blink.v:49.13-49.22|/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "count_SB_DFFSR_Q_R": {
@@ -13413,7 +13413,7 @@
           "bits": [ 57, 59, 112, 110, 108, 106, 87, 64, 61, 62, 103, 101, 99, 97, 95, 93, 91, 89, 85, 83, 81, 79, 77, 75, 73, 71, 69, 66, 67, 114, 115, 162 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
           }
         },
         "count_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI": {
@@ -13421,7 +13421,7 @@
           "bits": [ "1", 57, 59, 112, 110, 108, 106, 87, 64, 61, 62, 103, 101, 99, 97, 95, 93, 91, 89, 85, 83, 81, 79, 77, 75, 73, 71, 69, 66, 67, 114, 115 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:42.7-42.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "blink.v:44.7-44.23|/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "led": {
@@ -13435,7 +13435,7 @@
           "hide_name": 0,
           "bits": [ 163 ],
           "attributes": {
-            "src": "blink.v:30.24-30.30",
+            "src": "blink.v:8.9-8.15",
             "unused_bits": "0 "
           }
         },

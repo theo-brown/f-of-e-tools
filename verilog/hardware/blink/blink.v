@@ -5,6 +5,8 @@ module blink(led);
 
 	wire 		refclk;
 	wire		clk;
+	wire 		locked;
+
 	reg		LEDstatus = 1;
 	reg [31:0]	count = 0;
 

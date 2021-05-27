@@ -49,6 +49,7 @@ module top (led);
 
 	wire 		refclk;
 	wire		clk;
+	wire		locked;
 	reg		ENCLKHF		= 1'b1;	// Plock enable
 	reg		CLKHF_POWERUP	= 1'b1;	// Power up the HFOSC circuit
 
@@ -64,13 +65,13 @@ module top (led);
 	);
 
 // try and set up a PLL
-// 48MHz input, 8Mhz output (8 is too low for PLL?)
+// 48MHz input, 16Mhz output (16 is too high for processor?)
 SB_PLL40_CORE #(
 								.FEEDBACK_PATH("SIMPLE"),
-								.DIVR(4'b0000),         // DIVR =  0
-								.DIVF(7'b0000111),      // DIVF =  7
+								.DIVR(4'b0010),         // DIVR =  2
+								.DIVF(7'b0111111),      // DIVF =  63
 								.DIVQ(3'b110),          // DIVQ =  6
-								.FILTER_RANGE(3'b110)   // FILTER_RANGE = 6
+								.FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
         ) uut (
                 .LOCK(locked),
                 .RESETB(1'b1),
