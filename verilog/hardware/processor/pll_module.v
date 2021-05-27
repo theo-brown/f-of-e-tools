@@ -78,3 +78,12 @@ SB_PLL40_CORE #(
 .DIVQ(3'b110),          // DIVQ =  6
 .FILTER_RANGE(3'b110)   // FILTER_RANGE = 6
 */
+
+
+/* 48 to 20 VCO 640MHz
+.FEEDBACK_PATH("SIMPLE"),
+.DIVR(4'b0010),         // DIVR =  2
+.DIVF(7'b0100111),      // DIVF = 39
+.DIVQ(3'b101),          // DIVQ =  5
+.FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
+*/

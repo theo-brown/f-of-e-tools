@@ -86,7 +86,7 @@ module top (led);
 
 	// divide pclk by 2 with DFF, may need to addign this to global buffer
 	// or maybe this is automatic?
-	// clk: 8MHz output
+	// clk: 10MHz output
 
 	SB_DFF SB_DFF_inst (
 											.Q(clk), 	// output clk
