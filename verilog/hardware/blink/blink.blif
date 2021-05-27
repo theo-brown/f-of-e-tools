@@ -494,11 +494,11 @@
 .gate SB_PLL40_CORE BYPASS=$false LOCK=locked PLLOUTCORE=clk REFERENCECLK=refclk RESETB=$true
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "blink.v:29.12-35.19"
-.param DIVF 0111111
-.param DIVQ 110
-.param DIVR 0010
+.param DIVF 0001111
+.param DIVQ 101
+.param DIVR 0000
 .param FEEDBACK_PATH "SIMPLE"
-.param FILTER_RANGE 001
+.param FILTER_RANGE 100
 .names $true count_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI[0]
 1 1
 .names count_SB_DFFSR_Q_31_D[0] count_SB_DFFSR_Q_R_SB_LUT4_O_I3_SB_CARRY_CO_CI[1]

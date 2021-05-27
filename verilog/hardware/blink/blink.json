@@ -13322,11 +13322,11 @@
           "hide_name": 0,
           "type": "SB_PLL40_CORE",
           "parameters": {
-            "DIVF": "0111111",
-            "DIVQ": "110",
-            "DIVR": "0010",
+            "DIVF": "0001111",
+            "DIVQ": "101",
+            "DIVR": "0000",
             "FEEDBACK_PATH": "SIMPLE",
-            "FILTER_RANGE": "001"
+            "FILTER_RANGE": "100"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
