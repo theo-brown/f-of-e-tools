@@ -87,3 +87,12 @@ SB_PLL40_CORE #(
 .DIVQ(3'b101),          // DIVQ =  5
 .FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
 */
+
+
+/* 48 to 22 VCO 704
+.FEEDBACK_PATH("SIMPLE"),
+.DIVR(4'b0010),         // DIVR =  2
+.DIVF(7'b0101011),      // DIVF = 43
+.DIVQ(3'b101),          // DIVQ =  5
+.FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
+*/
