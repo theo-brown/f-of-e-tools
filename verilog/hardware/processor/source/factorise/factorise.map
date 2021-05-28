@@ -3,7 +3,7 @@ Archive member included to satisfy reference by file (symbol)
 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a(muldi3.o)
                               factorise.o (__mulsi3)
 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a(div.o)
-                              factorise.o (__divsi3)
+                              factorise.o (__udivsi3)
 
 Memory Configuration
 
@@ -19,19 +19,19 @@ Linker script and memory map
  *(.text)
  .text          0x0000000000000000       0x10 init.o
                 0x0000000000000000                _start
- .text          0x0000000000000010      0x14c factorise.o
+ .text          0x0000000000000010      0x148 factorise.o
                 0x0000000000000010                integer_sqrt
                 0x0000000000000070                primefactors
                 0x00000000000000fc                main
- .text          0x000000000000015c       0x24 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a(muldi3.o)
-                0x000000000000015c                __mulsi3
- .text          0x0000000000000180       0xb4 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a(div.o)
-                0x0000000000000180                __divsi3
-                0x0000000000000188                __udivsi3
-                0x00000000000001d0                __umodsi3
-                0x0000000000000204                __modsi3
+ .text          0x0000000000000158       0x24 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a(muldi3.o)
+                0x0000000000000158                __mulsi3
+ .text          0x000000000000017c       0xb4 /data/f-of-e-tools/tools/sunflower/tools/tools-lib/riscv/libgcc.a(div.o)
+                0x000000000000017c                __divsi3
+                0x0000000000000184                __udivsi3
+                0x00000000000001cc                __umodsi3
+                0x0000000000000200                __modsi3
                 0x0000000000001000                . = 0x1000
- *fill*         0x0000000000000234      0xdcc 
+ *fill*         0x0000000000000230      0xdd0 
  *(.strings)
                 0x0000000000001000                _etext = .
 

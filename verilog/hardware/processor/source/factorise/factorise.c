@@ -1,22 +1,22 @@
-#include <stdio.h>
+//#include <stdio.h>
 
-int integer_sqrt(int n)
+unsigned long int integer_sqrt(unsigned long int n)
 {
-	int i;
+	unsigned long int i;
 	for (i=1; i*i < n; i++);
 	return i;
 }
 
-void primefactors(int n)
+void primefactors(unsigned long int n)
 {
-	int m = n;
-	int sqrt = integer_sqrt(n);
-	for (int i = 2; i < sqrt; i++)
+	unsigned long int m = n;
+	unsigned long int sqrt = integer_sqrt(n);
+	for (unsigned long int i = 2; i < sqrt; i++)
 	{
 		while (m % i == 0)
 		{
 			m = m/i;
-			//printf("%i ", i);
+			//printf("%llu\n", i);
 		}
 	}
 }
@@ -27,15 +27,16 @@ int main(void)
 	unsigned char output = 0xFF;
 	*output_register = output;
 
-	unsigned int n = 3*7*269*103*577;
+	//unsigned long int n = 683*(3*5*7)**3;
+	unsigned long int n = 790657875;
 
-	//printf("%i\n", integer_sqrt(n));
 	while(1)
 	{
 		primefactors(n);
 
 		// Toggle output
 		output = ~output;
+		//printf("%i", output);
 		*output_register = output;
 	}
 
