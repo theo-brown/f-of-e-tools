@@ -74,6 +74,13 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		.out(adder_o)
 		);
 	
+	wire [31:0] sub_o;
+	sub alu_sub(
+		.input1(A),
+		.input2(B),
+		.out(sub_o)
+	);
+	
 	always @(ALUctl, A, B) begin
 		case (ALUctl[3:0])
 			/*
@@ -94,7 +101,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 			/*
 			 *	SUBTRACT (the fields also matches all branches)
 			 */
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SUB:	ALUOut = A - B;
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SUB:	ALUOut = sub_o;
 
 			/*
 			 *	SLT (the fields also matches all the other SLT variants)
