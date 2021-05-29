@@ -74,9 +74,6 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		.out(adder_o)
 		);
 	
-<<<<<<< HEAD
-	always @(ALUctl, A, B, adder_o) begin
-=======
 	wire [31:0] sub_o;
 	sub alu_sub(
 		.input1(A),
@@ -84,8 +81,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		.out(sub_o)
 	);
 	
-	always @(ALUctl, A, B) begin
->>>>>>> 00f0befbc41e1ca33e3c8489618babcfda2e401e
+	always @(ALUctl, A, B, adder_o, sub_o) begin
 		case (ALUctl[3:0])
 			/*
 			 *	AND (the fields also match ANDI and LUI)

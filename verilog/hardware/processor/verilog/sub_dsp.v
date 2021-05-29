@@ -31,7 +31,7 @@ module sub(input1, input2, out);
         SB_MAC16 #(.C_REG(0), .A_REG(0), .B_REG(0), .D_REG(0), .TOP_8x8_MULT_REG(0), .BOT_8x8_MULT_REG(0),
                    .PIPELINE_16x16_MULT_REG1(0), .PIPELINE_16x16_MULT_REG2(0), .TOPOUTPUT_SELECT(0), .TOPADDSUB_LOWERINPUT(0),
 		   .TOPADDSUB_UPPERINPUT(1), .TOPADDSUB_CARRYSELECT(3), .BOTOUTPUT_SELECT(0), .BOTADDSUB_LOWERINPUT(0), .BOTADDSUB_UPPERINPUT(1),
-		   .BOTADDSUB_CARRYSELECT(0), .MODE_8x8(1), .A_SIGNED(0), .B_SIGNED(0))
+		   .BOTADDSUB_CARRYSELECT(0), .MODE_8x8(1), .A_SIGNED(1), .B_SIGNED(1))
         SB_MAC16_adder(  
       .CE(dsp_ce), .C(dsp_c), .A(dsp_a), .B(dsp_b), .D(dsp_d),
       .IRSTTOP(dsp_irsttop), .IRSTBOT(dsp_irstbot), .ORSTTOP(dsp_orsttop), .ORSTBOT(dsp_orstbot),
