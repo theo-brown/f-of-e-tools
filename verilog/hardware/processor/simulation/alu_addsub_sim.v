@@ -31,13 +31,13 @@ always
  #0.5 clk = ~clk;
 
 initial begin
-	$dumpfile ("adder.vcd");
+	$dumpfile ("alu_addsub.vcd");
  	$dumpvars;
 
  	//reg[31:0] A, B;
  	//reg[3:0] FuncCode; //bit 32 + bit 14:12
 	//reg[6:0] Opcode; //bits 6:0
-  //1
+  	//1
  	A = 32'b0;
  	B = 32'b0;
  	FuncCode = 4'b0;
@@ -46,15 +46,15 @@ initial begin
  	#5
 
  	FuncCode = 4'b1000;
-  Opcode = 7'b0110011;
+  	Opcode = 7'b0110011;
 
  	#5
   
-  //2
+  	//2
  	A = 32'd10;	
-  B = 32'd0;
-  FuncCode = 4'b0;
-  Opcode = 7'b0110011;
+ 	B = 32'd0;
+  	FuncCode = 4'b0;
+  	Opcode = 7'b0110011;
 
  	#5
 
@@ -108,7 +108,7 @@ initial begin
 
  	//7
  	A = 32'hA3001000;
-  B = 32'hFFFF;
+  	B = 32'hFFFF;
  	FuncCode = 4'b0;
   
  	#5
@@ -119,14 +119,14 @@ initial begin
 
  	//8
  	A = 32'hA3001000;
-  B = 32'hB000FFFF;
+  	B = 32'hB000FFFF;
  	FuncCode = 4'b0;
 
  	#5
 
  	FuncCode = 4'b1000;
   
-  #5
+  	#5
 
  	$finish;
 end
