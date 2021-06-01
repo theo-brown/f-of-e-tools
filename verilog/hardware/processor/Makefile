@@ -1,4 +1,4 @@
-DESIGN	= sail_dsp
+DESIGN	= sail
 
 sail-nextpnr:
 	cp programs/data.hex verilog/
