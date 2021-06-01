@@ -1,11 +1,11 @@
-module sub(input1, input2, addsubin, out);
-	      input [31:0]	input1;
-	      input [31:0]	input2;
+module addsub(input1, input2, addsubin, out);
+	input [31:0]	input1;
+	input [31:0]	input2;
         input addsubin;
-	      output [31:0]	out;
+	output [31:0]	out;
 
-	      wire dsp_ce;
-	      wire [15:0] dsp_c;
+	wire dsp_ce;
+	wire [15:0] dsp_c;
         wire [15:0] dsp_a;
         wire [15:0] dsp_b;
         wire [15:0] dsp_d;
