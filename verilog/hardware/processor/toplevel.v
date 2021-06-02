@@ -42,7 +42,7 @@
  */
 
 module top (led);
-	output [7:0]	led;
+	output		led;
 
 	wire		clk_proc;
 	wire		data_clk_stall;
@@ -60,11 +60,17 @@ module top (led);
 	 *	Use the iCE40's hard primitive for the clock source.
 	 defparam OSCInst0.CLKHF_DIV = "0b00";
 	 */
+<<<<<<< HEAD
 	SB_HFOSC #(.CLKHF_DIV("0b00")) OSCInst0 (
+=======
+	
+	SB_HFOSC #(.CLKHF_DIV("0b11")) OSCInst0 (
+>>>>>>> master
 		.CLKHFEN(ENCLKHF),
 		.CLKHFPU(CLKHF_POWERUP),
 		.CLKHF(refclk)
 	);
+<<<<<<< HEAD
 
 // try and set up a PLL
 // 48MHz input, 20Mhz output, too high for processor
@@ -108,6 +114,15 @@ defparam OSCInst1.FILTER_RANGE(3'b011)   // FILTER_RANGE = 3
 
 */
 
+=======
+	/*
+	SB_LFOSC OSCInst0 (
+		.CLKLFEN(ENCLKHF),
+		.CLKLFPU(CLKHF_POWERUP),
+		.CLKLF(clk)
+	);
+	*/
+>>>>>>> master
 	/*
 	 *	Memory interface
 	 */
