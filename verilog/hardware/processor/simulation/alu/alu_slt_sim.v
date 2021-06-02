@@ -47,7 +47,7 @@ initial begin
 
  	//1 xor
   A = 32'h0000005A;
-  B = 32'h000000A9
+  B = 32'h000000A9;
   FuncCode = 4'b0100;
  	Opcode = 7'b0110011;
 
