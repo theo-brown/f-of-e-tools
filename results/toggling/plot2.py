@@ -21,7 +21,6 @@ def plot(powerfile, digitalfile, title, timeoffset=0):
         power = 1e3*supply_voltage*power_data[:, 1]
         power_time = fix_fractional_seconds(power_data[:, -1])
 
-
     if digitalfile is not None:
         digital_data = np.genfromtxt(digitalfile, delimiter=",", skip_header=8)
         value = digital_data[:, 1]
@@ -57,11 +56,13 @@ def avg_power(powerfile):
     power = 1e3*supply_voltage*power_data[:, 1]
     return np.mean(power[-1000:])
 
+
 def runs(filename):
     data = np.genfromtxt(filename, delimiter=",", skip_header=8)
     signal = data[:, 1]
     xor = np.logical_xor(signal[:-1], signal[1:])
     return xor.sum()
+
 
 def runs_per_second(filename):
     data = np.genfromtxt(filename, delimiter=",", skip_header=8)
@@ -73,10 +74,15 @@ def runs_per_second(filename):
 
     return xor.sum()/total_time
 
+
 def seconds_per_run(filename):
     return 1/runs_per_second(filename)
 
 
-#plot("factorise/factorise2_power.csv", "factorise/factorise2_A2_digital.csv",
-#     title="factorisation of long int",
-#     timeoffset=-1.125)
+file = "sail_11pll_D_A2_2khz.csv"
+print(runs_per_second(file))
+print(seconds_per_run(file))
+plot("sail_11pll_D_power.csv", "sail_11pll_D_A2_2khz.csv",
+     title="factorisation of long int",
+     timeoffset=0)
+plt.show()
