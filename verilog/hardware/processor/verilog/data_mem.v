@@ -12,72 +12,34 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	output reg		led;
 	output reg		clk_stall;	//Sets the clock high
 
-	/*
-	 *	Current state
-	 */
-	integer			state = 0;
 
-	/*
-	 *	Possible states
-	 */
+	// States
+	integer			state = 0;
 	parameter		IDLE = 0;
 	parameter		READ_BUFFER = 1;
 	parameter		READ = 2;
 	parameter		WRITE = 3;
 
-	/*
-	 *	Line buffer
-	 */
+	// Buffers
 	reg [31:0]		word_buf;
-
-	/*
-	 *	Read buffer
-	 */
 	wire [31:0]		read_buf;
-
-	/*
-	 *	Buffer to identify read or write operation
-	 */
 	reg			memread_buf;
 	reg			memwrite_buf;
-
-	/*
-	 *	Buffers to store write data
-	 */
 	reg [31:0]		write_data_buffer;
-
-	/*
-	 *	Buffer to store address
-	 */
 	reg [31:0]		addr_buf;
-
-	/*
-	 *	Sign_mask buffer
-	 */
 	reg [3:0]		sign_mask_buf;
 
-	/*
-	 *	Block memory registers
-	 *
-	 *	(Bad practice: The constant for the size should be a `define).
-	 */
+	// Memory
 	reg [31:0]		data_block[0:1023];
 
-	/*
-	 *	wire assignments
-	 */
+	// Wire connections
 	wire [9:0]		addr_buf_block_addr;
 	wire [1:0]		addr_buf_byte_offset;
-	
-	wire [31:0]		replacement_word;
 
 	assign			addr_buf_block_addr	= addr_buf[11:2];
 	assign			addr_buf_byte_offset	= addr_buf[1:0];
 
-	/*
-	 *	Combinational logic for generating 32-bit read data
-	 */
-	
+	// Read
 	wire select0;
 	wire select1;
 	wire select2;
@@ -91,13 +53,12 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	
 	// A = sign_mask_buf[2]
 	// B = sign_mask_buf[1]
-	// C = addr_buf_byte_offset[0]
-	// D = addr_buf_byte_offset[1]
+	// C = addr_buf_byte_offset[1]
+	// D = addr_buf_byte_offset[0]
 
-	// select0 = ~A(~BC + BD)
-	//assign select0 = ~sign_mask_buf[2] & ((~sign_mask_buf[1] & addr_buf_byte_offset[0]) | (sign_mask_buf[1] & addr_buf_byte_offset[1]));
+	// select0 = ~A~BCD + ~ACD + ~AB 
 	assign select0 = (~sign_mask_buf[2] & ~sign_mask_buf[1] & ~addr_buf_byte_offset[1] & addr_buf_byte_offset[0]) | (~sign_mask_buf[2] & addr_buf_byte_offset[1] & addr_buf_byte_offset[0]) | (~sign_mask_buf[2] & sign_mask_buf[1] & addr_buf_byte_offset[1]);
-	// select1 = ~A~BD + AB
+	// select1 = ~A~BC + AB
 	assign select1 = (~sign_mask_buf[2] & ~sign_mask_buf[1] & addr_buf_byte_offset[1]) | (sign_mask_buf[2] & sign_mask_buf[1]);
 	
 	// 1 BYTE
