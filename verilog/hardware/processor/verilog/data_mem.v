@@ -9,13 +9,8 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	input			memread;
 	input [3:0]		sign_mask;
 	output reg [31:0]	read_data;
-	output [7:0]		led;
+	output reg		led;
 	output reg		clk_stall;	//Sets the clock high
-
-	/*
-	 *	led register
-	 */
-	reg [31:0]		led_reg;
 
 	/*
 	 *	Current state
@@ -133,7 +128,7 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	 */
 	always @(posedge clk) begin
 		if(memwrite == 1'b1 && addr == 32'h2000) begin
-			led_reg <= write_data;
+			led <= write_data[0];
 		end
 	end
 
@@ -209,8 +204,4 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 		endcase
 	end
 
-	/*
-	 *	Test led
-	 */
-	assign led = led_reg[7:0];
 endmodule
