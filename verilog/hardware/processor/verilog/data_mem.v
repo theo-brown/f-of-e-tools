@@ -176,27 +176,23 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 			WRITE: begin
 				clk_stall <= 0;
 				
-				if (sign_mask_buf[2])
-				begin
-					data_block[addr_buf_block_addr - 32'h1000] <= write_data_buffer;
-				end
-				else
-				begin
-					if (sign_mask_buf[2:1]==2'b01)
-					begin
-						data_block[addr_buf_block_addr - 32'h1000] <= (addr_buf_byte_offset[1]==1'b1) ? {write_data_buffer[15:0], word_buf[15:0]} : {word_buf[31:16], write_data_buffer[15:0]};
-					end
-					else
-					begin
-						case (addr_buf_byte_offset)
-							2'b00: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:8], write_data_buffer[7:0]};
-							2'b01: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:16], write_data_buffer[7:0], word_buf[7:0]};
-							2'b10: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:24], write_data_buffer[7:0], word_buf[15:0]};
-							2'b11: data_block[addr_buf_block_addr - 32'h1000] <= {write_data_buffer[7:0], word_buf[23:0]};
-						endcase
-					end
-				end
-				
+				casez ({sign_mask_buf[2:1], addr_buf_byte_offset[1:0]})
+
+					// Write whole buffer
+					4'b1???: data_block[addr_buf_block_addr - 32'h1000] <= write_data_buffer;
+
+					// Write halfword
+					4'b0110: data_block[addr_buf_block_addr - 32'h1000] <= {write_data_buffer[15:0], word_buf[15:0]};
+					4'b0111: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:16], write_data_buffer[15:0]};
+
+					// Write 1 byte
+					4'b0000: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:8], write_data_buffer[7:0]};
+					4'b0001: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:16], write_data_buffer[7:0], word_buf[7:0]};
+					4'b0010: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:24], write_data_buffer[7:0], word_buf[15:0]};
+					4'b0011: data_block[addr_buf_block_addr - 32'h1000] <= {write_data_buffer[7:0], word_buf[23:0]};
+
+				endcase 
+
 				//data_block[addr_buf_block_addr - 32'h1000] <= replacement_word;
 				state <= IDLE;
 			end
