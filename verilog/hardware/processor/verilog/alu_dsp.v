@@ -80,7 +80,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		.input1(A),
 		.input2(B),
 		.out(sub_o),
-		.co(sub_co),
+		.co(sub_co)
 	);
 
 	wire [31:0] xor_o;
@@ -89,7 +89,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 	wire [31:0] lessthan;
 	assign lessthan = (sub_co & (xor_o[31])) | (sub_o[31] & ~(xor_o[31]));
 	
-	always @(ALUctl, A, B, adder_o, sub_o) begin
+	always @(ALUctl, A, B, adder_o, sub_o, xor_o, lessthan) begin
 		case (ALUctl[3:0])
 			/*
 			 *	AND (the fields also match ANDI and LUI)
@@ -125,7 +125,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 			/*
 			 *	SRA (the fields also matches the other SRA variants)
 			 */
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SRA:	ALUOut = A >>> B[4:0];
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SRA:	ALUOut = $signed(A) >>> B[4:0];
 
 			/*
 			 *	SLL (the fields also match the other SLL variants)
@@ -160,7 +160,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		endcase
 	end
 
-	always @(ALUctl, ALUOut, A, B) begin
+	always @(ALUctl, ALUOut, A, B, lessthan) begin
 		case (ALUctl[6:4])
 			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BEQ:	Branch_Enable = (ALUOut == 0);
 			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BNE:	Branch_Enable = !(ALUOut == 0);
