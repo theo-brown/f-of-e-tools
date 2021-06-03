@@ -86,6 +86,9 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 	wire [31:0] xor_o;
 	assign xor_o = A^B;
 	
+	wire [31:0] lessthan;
+	assign lessthan = (sub_co & (xor_o[31])) | (sub_o[31] & ~(xor_o[31]));
+	
 	always @(ALUctl, A, B, adder_o, sub_o) begin
 		case (ALUctl[3:0])
 			/*
@@ -112,7 +115,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 			 *	SLT (the fields also matches all the other SLT variants)
 			 */
 			/*`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SLT:	ALUOut = $signed(A) < $signed(B) ? 32'b1 : 32'b0;*/
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SLT:     ALUOut = (sub_co & (xor_o[31])) | (sub_o[31] & ~(xor_o[31]));
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SLT:     ALUOut = lessthan;
 
 			/*
 			 *	SRL (the fields also matches the other SRL variants)
@@ -161,8 +164,8 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 		case (ALUctl[6:4])
 			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BEQ:	Branch_Enable = (ALUOut == 0);
 			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BNE:	Branch_Enable = !(ALUOut == 0);
-			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BLT:	Branch_Enable = ($signed(A) < $signed(B));
-			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BGE:	Branch_Enable = ($signed(A) >= $signed(B));
+			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BLT:	Branch_Enable = lessthan;
+			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BGE:	Branch_Enable = ~lessthan;
 			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BLTU:	Branch_Enable = ($unsigned(A) < $unsigned(B));
 			`kSAIL_MICROARCHITECTURE_ALUCTL_6to4_BGEU:	Branch_Enable = ($unsigned(A) >= $unsigned(B));
 
