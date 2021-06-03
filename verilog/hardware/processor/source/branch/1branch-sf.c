@@ -2,10 +2,6 @@
 
 int main(void)
 {
-	unsigned int *output_register = (unsigned int *) 0x2000;
-	unsigned char output = 0;
-	while(1)
-	{
 	int list[60] =
 		{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 	   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
@@ -44,11 +40,7 @@ int main(void)
 			}
 		}
 	}
-	output = ~output;
-	printf("%i ", tot);
-	printf("Output: %d\n", output);
-
-}
+	printf("%i", tot);
 
 	return 0;
 }
