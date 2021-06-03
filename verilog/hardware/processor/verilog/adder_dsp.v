@@ -3,7 +3,7 @@ module adder(input1, input2, out);
 	input [31:0]	input2;
 	output [31:0]	out;
 
-	reg dsp_ce;
+	/*reg dsp_ce;
 	reg [15:0] dsp_c;
         reg [15:0] dsp_a;
         reg [15:0] dsp_b;
@@ -22,7 +22,28 @@ module adder(input1, input2, out);
         reg dsp_addsubbot;
         reg dsp_oloadtop;
         reg dsp_oloadbot;
-        reg dsp_ci;
+        reg dsp_ci;*/
+	
+	wire dsp_ce;
+	wire [15:0] dsp_c;
+        wire [15:0] dsp_a;
+        wire [15:0] dsp_b;
+        wire [15:0] dsp_d;
+        wire dsp_irsttop;
+        wire dsp_irstbot;
+        wire dsp_orsttop;
+        wire dsp_orstbot;
+        wire dsp_ahold;
+        wire dsp_bhold;
+        wire dsp_chold;
+        wire dsp_dhold;
+        wire dsp_oholdtop;
+        wire dsp_oholdbot;
+        wire dsp_addsubtop;
+        wire dsp_addsubbot;
+        wire dsp_oloadtop;
+        wire dsp_oloadbot;
+        wire dsp_ci;
 
         wire [31:0] dsp_o;
         wire dsp_co;
@@ -40,7 +61,7 @@ module adder(input1, input2, out);
       .CI(dsp_ci), .O(dsp_o), .CO(dsp_co)
       );
 
-      always @(input1, input2) begin
+    /*  always @(input1, input2) begin
      	 //default for the dsp
       	 dsp_ce = 1;
 	 dsp_c = input1[31:16];
@@ -62,7 +83,27 @@ module adder(input1, input2, out);
     	 dsp_oloadtop = 0;
     	 dsp_oloadbot = 0;
     	 dsp_ci = 0;
-       end
+       end*/
 	
+	assign dsp_ce = 1;
+	assign dsp_c = input1[31:16];
+	assign dsp_a = input2[31:16];
+	assign dsp_b = input2[15:0];
+	assign dsp_d = input1[15:0];
+     	assign dsp_irsttop = 0;
+     	assign dsp_irstbot = 0;
+     	assign dsp_orsttop = 0;
+    	assign dsp_orstbot = 0;
+    	assign dsp_ahold = 0;
+     	assign dsp_bhold = 0;
+     	assign dsp_chold = 0;
+     	assign dsp_dhold = 0;
+     	assign dsp_oholdtop = 0;
+     	assign dsp_oholdbot = 0;
+     	assign dsp_addsubtop = 0;
+     	assign dsp_addsubbot = 0;
+    	assign dsp_oloadtop = 0;
+    	assign dsp_oloadbot = 0;
+    	assign dsp_ci = 0;
 	assign out = dsp_o;
 endmodule
