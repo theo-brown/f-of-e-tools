@@ -1,6 +1,3 @@
-
-//Data cache
-
 module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data, led, clk_stall);
 	input			clk;
 	input [31:0]		addr;
@@ -11,7 +8,6 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	output reg [31:0]	read_data;
 	output reg		led;
 	output reg		clk_stall;	//Sets the clock high
-
 
 	// States
 	integer			state = 0;
