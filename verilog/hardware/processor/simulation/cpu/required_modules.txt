@@ -10,7 +10,7 @@ verilog/dataMem_mask_gen.v
 verilog/data_mem.v
 verilog/forwarding_unit.v
 verilog/imm_gen.v
-verilog/instruction_mem.v
+verilog/instruction_mem_ram.v
 verilog/mux2to1.v
 verilog/pipeline_registers.v
 verilog/program_counter.v
