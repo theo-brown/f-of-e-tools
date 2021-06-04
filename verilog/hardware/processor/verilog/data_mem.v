@@ -9,80 +9,37 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	input			memread;
 	input [3:0]		sign_mask;
 	output reg [31:0]	read_data;
-	output [7:0]		led;
+	output reg		led;
 	output reg		clk_stall;	//Sets the clock high
 
-	/*
-	 *	led register
-	 */
-	reg [31:0]		led_reg;
 
-	/*
-	 *	Current state
-	 */
+	// States
 	integer			state = 0;
-
-	/*
-	 *	Possible states
-	 */
 	parameter		IDLE = 0;
 	parameter		READ_BUFFER = 1;
 	parameter		READ = 2;
 	parameter		WRITE = 3;
 
-	/*
-	 *	Line buffer
-	 */
+	// Buffers
 	reg [31:0]		word_buf;
-
-	/*
-	 *	Read buffer
-	 */
 	wire [31:0]		read_buf;
-
-	/*
-	 *	Buffer to identify read or write operation
-	 */
 	reg			memread_buf;
 	reg			memwrite_buf;
-
-	/*
-	 *	Buffers to store write data
-	 */
 	reg [31:0]		write_data_buffer;
-
-	/*
-	 *	Buffer to store address
-	 */
 	reg [31:0]		addr_buf;
-
-	/*
-	 *	Sign_mask buffer
-	 */
 	reg [3:0]		sign_mask_buf;
 
-	/*
-	 *	Block memory registers
-	 *
-	 *	(Bad practice: The constant for the size should be a `define).
-	 */
+	// Memory
 	reg [31:0]		data_block[0:1023];
 
-	/*
-	 *	wire assignments
-	 */
+	// Wire connections
 	wire [9:0]		addr_buf_block_addr;
 	wire [1:0]		addr_buf_byte_offset;
-	
-	wire [31:0]		replacement_word;
 
 	assign			addr_buf_block_addr	= addr_buf[11:2];
 	assign			addr_buf_byte_offset	= addr_buf[1:0];
 
-	/*
-	 *	Combinational logic for generating 32-bit read data
-	 */
-	
+	// Read
 	wire select0;
 	wire select1;
 	wire select2;
@@ -96,13 +53,12 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	
 	// A = sign_mask_buf[2]
 	// B = sign_mask_buf[1]
-	// C = addr_buf_byte_offset[0]
-	// D = addr_buf_byte_offset[1]
+	// C = addr_buf_byte_offset[1]
+	// D = addr_buf_byte_offset[0]
 
-	// select0 = ~A(~BC + BD)
-	//assign select0 = ~sign_mask_buf[2] & ((~sign_mask_buf[1] & addr_buf_byte_offset[0]) | (sign_mask_buf[1] & addr_buf_byte_offset[1]));
+	// select0 = ~A~BCD + ~ACD + ~AB 
 	assign select0 = (~sign_mask_buf[2] & ~sign_mask_buf[1] & ~addr_buf_byte_offset[1] & addr_buf_byte_offset[0]) | (~sign_mask_buf[2] & addr_buf_byte_offset[1] & addr_buf_byte_offset[0]) | (~sign_mask_buf[2] & sign_mask_buf[1] & addr_buf_byte_offset[1]);
-	// select1 = ~A~BD + AB
+	// select1 = ~A~BC + AB
 	assign select1 = (~sign_mask_buf[2] & ~sign_mask_buf[1] & addr_buf_byte_offset[1]) | (sign_mask_buf[2] & sign_mask_buf[1]);
 	
 	// 1 BYTE
@@ -133,7 +89,7 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	 */
 	always @(posedge clk) begin
 		if(memwrite == 1'b1 && addr == 32'h2000) begin
-			led_reg <= write_data;
+			led <= write_data[0];
 		end
 	end
 
@@ -167,9 +123,7 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 				 *	(Bad practice: The constant should be a `define).
 				 */
 				word_buf <= data_block[addr_buf_block_addr - 32'h1000];
-				if(memread_buf==1'b1) begin
-					state <= READ;
-				end
+				state <= READ;
 			end
 
 			READ: begin
@@ -181,27 +135,23 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 			WRITE: begin
 				clk_stall <= 0;
 				
-				if (sign_mask_buf[2])
-				begin
-					data_block[addr_buf_block_addr - 32'h1000] <= write_data_buffer;
-				end
-				else
-				begin
-					if (sign_mask_buf[2:1]==2'b01)
-					begin
-						data_block[addr_buf_block_addr - 32'h1000] <= (addr_buf_byte_offset[1]==1'b1) ? {write_data_buffer[15:0], word_buf[15:0]} : {word_buf[31:16], write_data_buffer[15:0]};
-					end
-					else
-					begin
-						case (addr_buf_byte_offset)
-							2'b00: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:8], write_data_buffer[7:0]};
-							2'b01: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:16], write_data_buffer[7:0], word_buf[7:0]};
-							2'b10: data_block[addr_buf_block_addr - 32'h1000] <= {word_buf[31:24], write_data_buffer[7:0], word_buf[15:0]};
-							2'b11: data_block[addr_buf_block_addr - 32'h1000] <= {write_data_buffer[7:0], word_buf[23:0]};
-						endcase
-					end
-				end
-				
+				casez ({sign_mask_buf[2:1], addr_buf_byte_offset[1:0]})
+
+					// Write whole buffer
+					4'b1???: data_block[addr_buf_block_addr - 32'h1000] <= write_data_buffer;
+
+					// Write halfword
+					4'b0110: data_block[addr_buf_block_addr - 32'h1000][31:16] <= write_data_buffer[15:0];
+					4'b0111: data_block[addr_buf_block_addr - 32'h1000][15:0] <= write_data_buffer[15:0];
+
+					// Write 1 byte
+					4'b0000: data_block[addr_buf_block_addr - 32'h1000][7:0] <= write_data_buffer[7:0];
+					4'b0001: data_block[addr_buf_block_addr - 32'h1000][15:8] <= write_data_buffer[7:0];
+					4'b0010: data_block[addr_buf_block_addr - 32'h1000][23:16] <= write_data_buffer[7:0];
+					4'b0011: data_block[addr_buf_block_addr - 32'h1000][31:24] <= write_data_buffer[7:0];
+
+				endcase 
+
 				//data_block[addr_buf_block_addr - 32'h1000] <= replacement_word;
 				state <= IDLE;
 			end
@@ -209,8 +159,4 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 		endcase
 	end
 
-	/*
-	 *	Test led
-	 */
-	assign led = led_reg[7:0];
 endmodule
