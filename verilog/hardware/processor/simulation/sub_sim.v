@@ -5,7 +5,7 @@ module top();
 	reg[31:0] input2;
 	wire[31:0] data_out;
 
-	adder adder_inst(
+	sub sub_inst(
 		.input1(input1),
 		.input2(input2),
 		.out(data_out)
@@ -16,7 +16,7 @@ always
  #0.5 clk = ~clk;
 
 initial begin
-	$dumpfile ("adder_sim.vcd");
+  $dumpfile ("sub.vcd");
  	$dumpvars;
 
  	input1 = 32'd0;
@@ -24,8 +24,8 @@ initial begin
 
  	#5
 
- 	input1 = 32'd0;
- 	input2 = 32'd10;
+ 	input1 = 32'd10;
+ 	input2 = 32'd0;
 
  	#5
 
@@ -34,8 +34,8 @@ initial begin
 
  	#5
 
-	input1 = 32'h0000FFFF;
-	input2 = 32'h03001000; 	
+	input1 = 32'h03001000; 
+	input2 = 32'h0000FFFF; 	
 
 	#5
 	$finish;
