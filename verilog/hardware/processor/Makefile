@@ -4,8 +4,8 @@ UNMODIFIED_DESIGN=sail_default
 sail-modified:
 	cp programs/data.hex verilog/
 	cp programs/program.hex verilog/
-	yosys ../../../yscripts/$(MODIFIED_DESIGN).ys -l $(MODIFIED_DESIGN)_yosyslog.txt
-	nextpnr-ice40 --up5k --package uwg30 --json $(MODIFIED_DESIGN).json --pcf pcf/$(MODIFIED_DESIGN).pcf --asc $(MODIFIED_DESIGN).asc -l $(MODIFIED_DESIGN)_pnrlog.txt
+	yosys -q ../../../yscripts/$(MODIFIED_DESIGN).ys
+	nextpnr-ice40 --up5k --package uwg30 --json $(MODIFIED_DESIGN).json --pcf pcf/$(MODIFIED_DESIGN).pcf --asc $(MODIFIED_DESIGN).asc
 	icetime -p pcf/$(MODIFIED_DESIGN).pcf -P uwg30 -d up5k -t $(MODIFIED_DESIGN).asc
 	icepack $(MODIFIED_DESIGN).asc $(MODIFIED_DESIGN).bin
 	rm -f *.json *.blif
