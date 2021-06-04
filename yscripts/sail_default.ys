@@ -1,0 +1,5 @@
+read_verilog .sail-core/verilog/*.v toplevel.v
+
+synth_ice40 -noflatten -blif sail_default.blif
+
+write_json sail_default.json

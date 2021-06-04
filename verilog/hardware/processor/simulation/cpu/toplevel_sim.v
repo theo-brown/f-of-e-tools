@@ -41,7 +41,7 @@
  *	Top level entity, linking cpu with data and instruction memory.
  */
 
-module top (input clk, output [7:0] led);
+module top (input clk, output reg led);
 	wire		clk_proc;
 	wire		data_clk_stall;
 	
