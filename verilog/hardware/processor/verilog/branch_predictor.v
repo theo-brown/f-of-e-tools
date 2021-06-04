@@ -1,25 +1,20 @@
 /*
 	Authored 2018-2019, Ryan Voo.
-
 	All rights reserved.
 	Redistribution and use in source and binary forms, with or without
 	modification, are permitted provided that the following conditions
 	are met:
-
 	*	Redistributions of source code must retain the above
 		copyright notice, this list of conditions and the following
 		disclaimer.
-
 	*	Redistributions in binary form must reproduce the above
 		copyright notice, this list of conditions and the following
 		disclaimer in the documentation and/or other materials
 		provided with the distribution.
-
 	*	Neither the name of the author nor the names of its
 		contributors may be used to endorse or promote products
 		derived from this software without specific prior written
 		permission.
-
 	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
@@ -70,13 +65,10 @@ module branch_predictor(
 	/*
 	 *	internal state
 	 */
-	/*
 	reg [1:0]	s0;
 	reg [1:0]	s1;
 	reg [1:0]	s2;
 	reg [1:0]	s3;
-	*/
-	reg [7:0] s;
 	reg [1:0]	h;
 	reg 		p;
 
@@ -93,13 +85,10 @@ module branch_predictor(
 	 *	modules in the design and to thereby set the values.
 	 */
 	initial begin
-		/*
 		s0 = 2'b00;
 		s1 = 2'b00;
 		s2 = 2'b00;
 		s3 = 2'b00;
-		*/
-		s = 8'b00000000
 		h = 2'b00;
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
@@ -119,24 +108,24 @@ module branch_predictor(
 			h[1] <= h[0];
 			h[0] <= actual_branch_decision;
 			if (h == 2'b00) begin
-				s[1] <= (s[1]&s[0]) | (s[0]&actual_branch_decision) | (s[1]&actual_branch_decision);
-				s[0] <= (s[1]&(!s[0])) | ((!s[0])&actual_branch_decision) | (s[1]&actual_branch_decision);
-				p <= s[1];
+				s0[1] <= (s0[1]&s0[0]) | (s0[0]&actual_branch_decision) | (s0[1]&actual_branch_decision);
+				s0[0] <= (s0[1]&(!s0[0])) | ((!s0[0])&actual_branch_decision) | (s0[1]&actual_branch_decision);
+				p <= s0[1];
 			end
 			if (h == 2'b01) begin
-				s[3] <= (s[3]&s[2]) | (s[2]&actual_branch_decision) | (s[3]&actual_branch_decision);
-				s[2] <= (s[3]&(!s[2])) | ((!s[2])&actual_branch_decision) | (s[3]&actual_branch_decision);
-				p <= s[3];
+				s1[1] <= (s1[1]&s1[0]) | (s1[0]&actual_branch_decision) | (s1[1]&actual_branch_decision);
+				s1[0] <= (s1[1]&(!s1[0])) | ((!s1[0])&actual_branch_decision) | (s1[1]&actual_branch_decision);
+				p <= s1[1];
 			end
 			if (h == 2'b10) begin
-				s[5] <= (s[5]&s[4]) | (s[4]&actual_branch_decision) | (s[5]&actual_branch_decision);
-				s[4] <= (s[5]&(!s[4])) | ((!s[4])&actual_branch_decision) | (s[5]&actual_branch_decision);
-				p <= s[5];
+				s2[1] <= (s2[1]&s2[0]) | (s2[0]&actual_branch_decision) | (s2[1]&actual_branch_decision);
+				s2[0] <= (s2[1]&(!s2[0])) | ((!s2[0])&actual_branch_decision) | (s2[1]&actual_branch_decision);
+				p <= s2[1];
 			end
 			if (h == 2'b11) begin
-				s[7] <= (s[7]&s[6]) | (s[6]&actual_branch_decision) | (s[7]&actual_branch_decision);
-				s[6] <= (s[7]&(!s[6])) | ((!s[6])&actual_branch_decision) | (s[7]&actual_branch_decision);
-				p <= s[7];
+				s3[1] <= (s3[1]&s3[0]) | (s3[0]&actual_branch_decision) | (s3[1]&actual_branch_decision);
+				s3[0] <= (s3[1]&(!s3[0])) | ((!s3[0])&actual_branch_decision) | (s3[1]&actual_branch_decision);
+				p <= s3[1];
 			end
 		end
 	end
