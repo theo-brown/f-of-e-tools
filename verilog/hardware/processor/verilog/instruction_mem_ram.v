@@ -72,5 +72,6 @@ module instruction_memory(clk, addr, out);
 
   always @(posedge clk) begin
     out <= {instruction_memory[addr >> 2][31:16], instruction_memory[addr >> 2][15:0]};
+  end
 	
 endmodule
