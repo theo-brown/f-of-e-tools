@@ -70,10 +70,13 @@ module branch_predictor(
 	/*
 	 *	internal state
 	 */
+	/*
 	reg [1:0]	s0;
 	reg [1:0]	s1;
 	reg [1:0]	s2;
 	reg [1:0]	s3;
+	*/
+	reg [7:0] s;
 	reg [1:0]	h;
 	reg 		p;
 
@@ -90,10 +93,13 @@ module branch_predictor(
 	 *	modules in the design and to thereby set the values.
 	 */
 	initial begin
+		/*
 		s0 = 2'b00;
 		s1 = 2'b00;
 		s2 = 2'b00;
 		s3 = 2'b00;
+		*/
+		s = 8'b00000000
 		h = 2'b00;
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
@@ -113,24 +119,24 @@ module branch_predictor(
 			h[1] <= h[0];
 			h[0] <= actual_branch_decision;
 			if (h == 2'b00) begin
-				s0[1] <= (s0[1]&s0[0]) | (s0[0]&actual_branch_decision) | (s0[1]&actual_branch_decision);
-				s0[0] <= (s0[1]&(!s0[0])) | ((!s0[0])&actual_branch_decision) | (s0[1]&actual_branch_decision);
-				p <= s0[1];
+				s[1] <= (s[1]&s[0]) | (s[0]&actual_branch_decision) | (s[1]&actual_branch_decision);
+				s[0] <= (s[1]&(!s[0])) | ((!s[0])&actual_branch_decision) | (s[1]&actual_branch_decision);
+				p <= s[1];
 			end
 			if (h == 2'b01) begin
-				s1[1] <= (s1[1]&s1[0]) | (s1[0]&actual_branch_decision) | (s1[1]&actual_branch_decision);
-				s1[0] <= (s1[1]&(!s1[0])) | ((!s1[0])&actual_branch_decision) | (s1[1]&actual_branch_decision);
-				p <= s1[1];
+				s[3] <= (s[3]&s[2]) | (s[2]&actual_branch_decision) | (s[3]&actual_branch_decision);
+				s[2] <= (s[3]&(!s[2])) | ((!s[2])&actual_branch_decision) | (s[3]&actual_branch_decision);
+				p <= s[3];
 			end
 			if (h == 2'b10) begin
-				s2[1] <= (s2[1]&s2[0]) | (s2[0]&actual_branch_decision) | (s2[1]&actual_branch_decision);
-				s2[0] <= (s2[1]&(!s2[0])) | ((!s2[0])&actual_branch_decision) | (s2[1]&actual_branch_decision);
-				p <= s2[1];
+				s[5] <= (s[5]&s[4]) | (s[4]&actual_branch_decision) | (s[5]&actual_branch_decision);
+				s[4] <= (s[5]&(!s[4])) | ((!s[4])&actual_branch_decision) | (s[5]&actual_branch_decision);
+				p <= s[5];
 			end
 			if (h == 2'b11) begin
-				s3[1] <= (s3[1]&s3[0]) | (s3[0]&actual_branch_decision) | (s3[1]&actual_branch_decision);
-				s3[0] <= (s3[1]&(!s3[0])) | ((!s3[0])&actual_branch_decision) | (s3[1]&actual_branch_decision);
-				p <= s3[1];
+				s[7] <= (s[7]&s[6]) | (s[6]&actual_branch_decision) | (s[7]&actual_branch_decision);
+				s[6] <= (s[7]&(!s[6])) | ((!s[6])&actual_branch_decision) | (s[7]&actual_branch_decision);
+				p <= s[7];
 			end
 		end
 	end
