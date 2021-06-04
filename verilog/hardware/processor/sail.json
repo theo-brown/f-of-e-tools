@@ -34425,7 +34425,7 @@
     },
     "branch_predictor": {
       "attributes": {
-        "src": "verilog/branch_predictor.v:43.1-140.10"
+        "src": "verilog/branch_predictor.v:38.1-135.10"
       },
       "ports": {
         "clk": {
@@ -34470,7 +34470,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34495,7 +34495,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34520,7 +34520,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34545,7 +34545,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34570,7 +34570,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34595,7 +34595,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34620,7 +34620,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34645,7 +34645,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34670,7 +34670,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34695,7 +34695,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34720,7 +34720,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34745,7 +34745,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34770,7 +34770,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34795,7 +34795,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34820,7 +34820,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34845,7 +34845,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34870,7 +34870,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34895,7 +34895,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34920,7 +34920,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34945,7 +34945,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34970,7 +34970,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -34995,7 +34995,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35020,7 +35020,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35045,7 +35045,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35070,7 +35070,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35095,7 +35095,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35120,7 +35120,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35145,7 +35145,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35170,7 +35170,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35195,7 +35195,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35220,7 +35220,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35245,7 +35245,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -35269,7 +35269,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:102.2-104.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:1.51-1.90"
+            "src": "verilog/branch_predictor.v:97.2-99.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:1.51-1.90"
           },
           "port_directions": {
             "C": "input",
@@ -35289,7 +35289,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -35311,7 +35311,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -35332,7 +35332,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35353,7 +35353,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35374,7 +35374,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35395,7 +35395,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35416,7 +35416,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35437,7 +35437,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35458,7 +35458,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35479,7 +35479,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35500,7 +35500,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35521,7 +35521,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35542,7 +35542,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35563,7 +35563,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35584,7 +35584,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35605,7 +35605,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35626,7 +35626,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35647,7 +35647,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35668,7 +35668,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35689,7 +35689,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35710,7 +35710,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35731,7 +35731,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35752,7 +35752,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35773,7 +35773,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35794,7 +35794,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35815,7 +35815,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35836,7 +35836,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35857,7 +35857,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35878,7 +35878,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35899,7 +35899,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35920,7 +35920,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35941,7 +35941,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35962,7 +35962,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -35984,7 +35984,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36081,7 +36081,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36103,7 +36103,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36200,7 +36200,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36222,7 +36222,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36319,7 +36319,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36341,7 +36341,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36438,7 +36438,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36460,7 +36460,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:111.2-136.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "verilog/branch_predictor.v:106.2-131.5|/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -36556,14 +36556,14 @@
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:58.9-58.31"
+            "src": "verilog/branch_predictor.v:53.9-53.31"
           }
         },
         "branch_addr": {
           "hide_name": 0,
           "bits": [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:67.16-67.27"
+            "src": "verilog/branch_predictor.v:62.16-62.27"
           }
         },
         "branch_addr_SB_LUT4_O_I3": {
@@ -36571,63 +36571,63 @@
           "bits": [ "0", 108, 115, 127, 126, 124, 123, 122, 121, 120, 119, 118, 117, 116, 114, 113, 112, 111, 110, 109, 107, 106, 105, 133, 132, 131, 130, 129, 128, 125, 104, 103 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "verilog/branch_predictor.v:138.23-138.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "verilog/branch_predictor.v:133.23-133.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "branch_decode_sig": {
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:59.9-59.26"
+            "src": "verilog/branch_predictor.v:54.9-54.26"
           }
         },
         "branch_mem_sig": {
           "hide_name": 0,
           "bits": [ 5 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:60.9-60.23"
+            "src": "verilog/branch_predictor.v:55.9-55.23"
           }
         },
         "branch_mem_sig_reg": {
           "hide_name": 0,
           "bits": [ 134 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:80.7-80.25"
+            "src": "verilog/branch_predictor.v:75.7-75.25"
           }
         },
         "clk": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:57.9-57.12"
+            "src": "verilog/branch_predictor.v:52.9-52.12"
           }
         },
         "h": {
           "hide_name": 0,
           "bits": [ 135, 136 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:77.12-77.13"
+            "src": "verilog/branch_predictor.v:72.12-72.13"
           }
         },
         "in_addr": {
           "hide_name": 0,
           "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:61.15-61.22"
+            "src": "verilog/branch_predictor.v:56.15-56.22"
           }
         },
         "offset": {
           "hide_name": 0,
           "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:62.15-62.21"
+            "src": "verilog/branch_predictor.v:57.15-57.21"
           }
         },
         "p": {
           "hide_name": 0,
           "bits": [ 138 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:78.8-78.9"
+            "src": "verilog/branch_predictor.v:73.8-73.9"
           }
         },
         "p_SB_DFFE_Q_D": {
@@ -36648,28 +36648,28 @@
           "hide_name": 0,
           "bits": [ 102 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:68.10-68.20"
+            "src": "verilog/branch_predictor.v:63.10-63.20"
           }
         },
         "s0": {
           "hide_name": 0,
           "bits": [ 147, 139 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:73.12-73.14"
+            "src": "verilog/branch_predictor.v:68.12-68.14"
           }
         },
         "s0_SB_DFFE_Q_1_D": {
           "hide_name": 0,
           "bits": [ 146 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:117.14-117.99"
+            "src": "verilog/branch_predictor.v:112.14-112.99"
           }
         },
         "s0_SB_DFFE_Q_D": {
           "hide_name": 0,
           "bits": [ 144 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:116.14-116.93"
+            "src": "verilog/branch_predictor.v:111.14-111.93"
           }
         },
         "s0_SB_DFFE_Q_E": {
@@ -36682,21 +36682,21 @@
           "hide_name": 0,
           "bits": [ 151, 142 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:74.12-74.14"
+            "src": "verilog/branch_predictor.v:69.12-69.14"
           }
         },
         "s1_SB_DFFE_Q_1_D": {
           "hide_name": 0,
           "bits": [ 150 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:122.14-122.99"
+            "src": "verilog/branch_predictor.v:117.14-117.99"
           }
         },
         "s1_SB_DFFE_Q_D": {
           "hide_name": 0,
           "bits": [ 148 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:121.14-121.93"
+            "src": "verilog/branch_predictor.v:116.14-116.93"
           }
         },
         "s1_SB_DFFE_Q_E": {
@@ -36709,21 +36709,21 @@
           "hide_name": 0,
           "bits": [ 155, 140 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:75.12-75.14"
+            "src": "verilog/branch_predictor.v:70.12-70.14"
           }
         },
         "s2_SB_DFFE_Q_1_D": {
           "hide_name": 0,
           "bits": [ 154 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:127.14-127.99"
+            "src": "verilog/branch_predictor.v:122.14-122.99"
           }
         },
         "s2_SB_DFFE_Q_D": {
           "hide_name": 0,
           "bits": [ 152 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:126.14-126.93"
+            "src": "verilog/branch_predictor.v:121.14-121.93"
           }
         },
         "s2_SB_DFFE_Q_E": {
@@ -36736,21 +36736,21 @@
           "hide_name": 0,
           "bits": [ 159, 143 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:76.12-76.14"
+            "src": "verilog/branch_predictor.v:71.12-71.14"
           }
         },
         "s3_SB_DFFE_Q_1_D": {
           "hide_name": 0,
           "bits": [ 158 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:132.14-132.99"
+            "src": "verilog/branch_predictor.v:127.14-127.99"
           }
         },
         "s3_SB_DFFE_Q_D": {
           "hide_name": 0,
           "bits": [ 156 ],
           "attributes": {
-            "src": "verilog/branch_predictor.v:131.14-131.93"
+            "src": "verilog/branch_predictor.v:126.14-126.93"
           }
         },
         "s3_SB_DFFE_Q_E": {
