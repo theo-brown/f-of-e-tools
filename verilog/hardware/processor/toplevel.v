@@ -11,23 +11,17 @@ module top (led);
 	wire		data_clk_stall;
 	
 	wire		clk;
+	wire		hfosc;
+	wire 		pll;	
 
-	/*
-	 *	Use the iCE40's hard primitive for the clock source.
-	 */
-	
-	SB_HFOSC #(.CLKHF_DIV("0b10")) OSCInst0 (
-		.CLKHFEN(1),
-		.CLKHFPU(1),
-		.CLKHF(clk)
-	);
-	/*
-	SB_LFOSC OSCInst0 (
-		.CLKLFEN(1),
-		.CLKLFPU(1),
-		.CLKLF(clk)
-	);
-	*/
+	SB_HFOSC OSCInst0 (.CLKHFEN(1),
+			   .CLKHFPU(1),
+			   .CLKHF(hfosc));
+
+	pll pll_inst (hfosc, pll);
+
+	dividebytwo freq_div (pll, clk);
+
 	/*
 	 *	Memory interface
 	 */
