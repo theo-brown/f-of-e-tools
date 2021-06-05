@@ -42,71 +42,24 @@
  */
 
 module top (led);
-	output reg	led;
+	output [7:0]	led;
 
 	wire		clk_proc;
 	wire		data_clk_stall;
 
-	wire 		refclk;
 	wire		clk;
-	wire		locked;
-	wire		pclk;
-
 	reg		ENCLKHF		= 1'b1;	// Plock enable
 	reg		CLKHF_POWERUP	= 1'b1;	// Power up the HFOSC circuit
 
 
 	/*
 	 *	Use the iCE40's hard primitive for the clock source.
-	 defparam OSCInst0.CLKHF_DIV = "0b00";
 	 */
-	SB_HFOSC #(.CLKHF_DIV("0b00")) OSCInst0 (
+	SB_HFOSC #(.CLKHF_DIV("0b11")) OSCInst0 (
 		.CLKHFEN(ENCLKHF),
 		.CLKHFPU(CLKHF_POWERUP),
-		.CLKHF(refclk)
+		.CLKHF(clk)
 	);
-
-// try and set up a PLL
-// 48MHz input, 20Mhz output, too high for processor
-// build a divider circuit
-
-	SB_PLL40_CORE #(
-								.FEEDBACK_PATH("SIMPLE"),
-								.DIVR(4'b0010),         // DIVR =  2
-								.DIVF(7'b0101011),      // DIVF = 43
-								.DIVQ(3'b101),          // DIVQ =  5
-								.FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
-        ) uut (
-                .LOCK(locked),
-                .RESETB(1'b1),
-                .BYPASS(1'b0),
-                .REFERENCECLK(refclk),
-                .PLLOUTCORE(pclk)
-                );
-
-	// divide pclk by 2 with DFF, may need to addign this to global buffer
-	// or maybe this is automatic?
-	// clk: 10MHz output
-
-	SB_DFF SB_DFF_inst (
-											.Q(clk), 	// output clk
-											.C(pclk),	// input clock from pll
-											.D(~clk) 	// D = not clk - not Q
-											);
-
-/*
-SB_PLL40_CORE OSCInst1 (
-	.REFERENCECLK(refclk)
-	.PLLOUTGLOBAL(clk)
-	.PLLOUTCORE
-	)
-defparam OSCInst1.FEEDBACK_PATH("SIMPLE"),
-defparam OSCInst1.DIVR(4'b0010),         // DIVR =  2
-defparam OSCInst1.DIVF(7'b0010011),      // DIVF = 19
-defparam OSCInst1.DIVQ(3'b101),          // DIVQ =  5
-defparam OSCInst1.FILTER_RANGE(3'b011)   // FILTER_RANGE = 3
-
-*/
 
 	/*
 	 *	Memory interface

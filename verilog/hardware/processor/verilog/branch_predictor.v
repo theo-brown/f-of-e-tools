@@ -65,17 +65,22 @@ module branch_predictor(
 	/*
 	 *	internal state
 	 */
+	/*
 	reg [1:0]	s0;
 	reg [1:0]	s1;
 	reg [1:0]	s2;
 	reg [1:0]	s3;
 	reg [1:0]	h;
+	*/
 	reg 			p;
 	reg [5:0] cpc;
+	reg [31:0] spc;
+	/*
 	reg [5:0] spc0;
 	reg [5:0] spc1;
 	reg [5:0] spc2;
 	reg [5:0] spc3;
+	*/
 
 	reg		branch_mem_sig_reg;
 
@@ -98,11 +103,15 @@ module branch_predictor(
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
 		cpc = in_addr[7:2];
+		spc = 31'b00000010000000100000001000000001
 		// make these 8 bits, with last two being FSM?
+		/*
 		spc0 = 6'b000000;
 		spc1 = 6'b000000;
 		spc2 = 6'b000000;
 		spc3 = 6'b000000;
+		*/
+
 		// how do I update the state machine as the actual_branch_decision input
 		// is for the previous PC which I no longer know?
 		// Make this is spc so always increment spc0 counter?
@@ -140,27 +149,13 @@ module branch_predictor(
 	 */
 	always @(posedge clk) begin
 		if (branch_mem_sig_reg) begin
-			h[1] <= h[0];
-			h[0] <= actual_branch_decision;
-			if (h == 2'b00) begin
-				s0[1] <= (s0[1]&s0[0]) | (s0[0]&actual_branch_decision) | (s0[1]&actual_branch_decision);
-				s0[0] <= (s0[1]&(!s0[0])) | ((!s0[0])&actual_branch_decision) | (s0[1]&actual_branch_decision);
-				p <= s0[1];
-			end
-			if (h == 2'b01) begin
-				s1[1] <= (s1[1]&s1[0]) | (s1[0]&actual_branch_decision) | (s1[1]&actual_branch_decision);
-				s1[0] <= (s1[1]&(!s1[0])) | ((!s1[0])&actual_branch_decision) | (s1[1]&actual_branch_decision);
-				p <= s1[1];
-			end
-			if (h == 2'b10) begin
-				s2[1] <= (s2[1]&s2[0]) | (s2[0]&actual_branch_decision) | (s2[1]&actual_branch_decision);
-				s2[0] <= (s2[1]&(!s2[0])) | ((!s2[0])&actual_branch_decision) | (s2[1]&actual_branch_decision);
-				p <= s2[1];
-			end
-			if (h == 2'b11) begin
-				s3[1] <= (s3[1]&s3[0]) | (s3[0]&actual_branch_decision) | (s3[1]&actual_branch_decision);
-				s3[0] <= (s3[1]&(!s3[0])) | ((!s3[0])&actual_branch_decision) | (s3[1]&actual_branch_decision);
-				p <= s3[1];
+			spc[1] <= (spc[1]&spc[0]) | (spc[0]&actual_branch_decision) | (spc[1]&actual_branch_decision);
+			spc[0] <= (spc[1]&(!s[0])) | ((!spc[0])&actual_branch_decision) | (spc[1]&actual_branch_decision);
+			case (cpc)
+				spc[31:26] :	begin
+					// how to keep FSM in right place? With another dummy variable?
+					spc[31:8] <= spc[23:0]
+					spc[7:2] <= cpc
 			end
 		end
 	end
