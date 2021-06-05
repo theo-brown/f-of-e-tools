@@ -70,7 +70,12 @@ module branch_predictor(
 	reg [1:0]	s2;
 	reg [1:0]	s3;
 	reg [1:0]	h;
-	reg 		p;
+	reg 			p;
+	reg [5:0] cpc;
+	reg [5:0] spc0;
+	reg [5:0] spc1;
+	reg [5:0] spc2;
+	reg [5:0] spc3;
 
 	reg		branch_mem_sig_reg;
 
@@ -85,13 +90,43 @@ module branch_predictor(
 	 *	modules in the design and to thereby set the values.
 	 */
 	initial begin
-		s0 = 2'b00;
-		s1 = 2'b00;
-		s2 = 2'b00;
-		s3 = 2'b00;
+		s0 = 2'b10;
+		s1 = 2'b10;
+		s2 = 2'b10;
+		s3 = 2'b10;
 		h = 2'b00;
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
+		cpc = in_addr[7:2];
+		// make these 8 bits, with last two being FSM?
+		spc0 = 6'b000000;
+		spc1 = 6'b000000;
+		spc2 = 6'b000000;
+		spc3 = 6'b000000;
+		// how do I update the state machine as the actual_branch_decision input
+		// is for the previous PC which I no longer know?
+		// Make this is spc so always increment spc0 counter?
+		/*
+		in always block:
+		increment spc0 counter
+		if cpc == spc3:
+			spc3 <= spc2
+			spc2 <= spc1
+			spc1 <= spc0
+			spc0 <= cpc
+		else if cpc == spc2:
+			spc2 <= spc1
+			spc1 <= spc0
+			spc0 <= cpc
+		else if cpc == spc1:
+			spc1 <= spc0
+			spc0 <= cpc
+		else:
+			scp0 <= cpc
+		make prediction based on spc0 FSM
+
+		*/
+
 	end
 
 	always @(negedge clk) begin
