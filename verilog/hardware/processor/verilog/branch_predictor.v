@@ -65,23 +65,10 @@ module branch_predictor(
 	/*
 	 *	internal state
 	 */
-	/*
-	reg [1:0]	s0;
-	reg [1:0]	s1;
-	reg [1:0]	s2;
-	reg [1:0]	s3;
-	reg [1:0]	h;
-	*/
+	reg [1:0]	s;
 	reg 			p;
 	reg [5:0] cpc;
 	reg [31:0] spc;
-	/*
-	reg [5:0] spc0;
-	reg [5:0] spc1;
-	reg [5:0] spc2;
-	reg [5:0] spc3;
-	*/
-
 	reg		branch_mem_sig_reg;
 
 	/*
@@ -95,47 +82,11 @@ module branch_predictor(
 	 *	modules in the design and to thereby set the values.
 	 */
 	initial begin
-		s0 = 2'b10;
-		s1 = 2'b10;
-		s2 = 2'b10;
-		s3 = 2'b10;
-		h = 2'b00;
+		s = 2'b00;
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
-		cpc = in_addr[7:2];
-		spc = 31'b00000010000000100000001000000001
-		// make these 8 bits, with last two being FSM?
-		/*
-		spc0 = 6'b000000;
-		spc1 = 6'b000000;
-		spc2 = 6'b000000;
-		spc3 = 6'b000000;
-		*/
-
-		// how do I update the state machine as the actual_branch_decision input
-		// is for the previous PC which I no longer know?
-		// Make this is spc so always increment spc0 counter?
-		/*
-		in always block:
-		increment spc0 counter
-		if cpc == spc3:
-			spc3 <= spc2
-			spc2 <= spc1
-			spc1 <= spc0
-			spc0 <= cpc
-		else if cpc == spc2:
-			spc2 <= spc1
-			spc1 <= spc0
-			spc0 <= cpc
-		else if cpc == spc1:
-			spc1 <= spc0
-			spc0 <= cpc
-		else:
-			scp0 <= cpc
-		make prediction based on spc0 FSM
-
-		*/
-
+		spc = 32'b00000010000000100000001000000010
+		cpc = 6'b000000
 	end
 
 	always @(negedge clk) begin
@@ -149,14 +100,34 @@ module branch_predictor(
 	 */
 	always @(posedge clk) begin
 		if (branch_mem_sig_reg) begin
+			cpc <= in_addr[7:2];
 			spc[1] <= (spc[1]&spc[0]) | (spc[0]&actual_branch_decision) | (spc[1]&actual_branch_decision);
 			spc[0] <= (spc[1]&(!s[0])) | ((!spc[0])&actual_branch_decision) | (spc[1]&actual_branch_decision);
 			case (cpc)
+				spc[15:10] : begin
+					s <= spc[9:8];
+					spc[15:8] <= spc[7:0];
+					spc[7:2] <= cpc;
+					spc[1:0] <= s;
+				end
+				spc[23:18] : begin
+					s <= spc[17:16];
+					spc[23:8] <= spc[15:0];
+					spc[7:2] <= cpc;
+					spc[1:0] <= s;
+				end
 				spc[31:26] :	begin
-					// how to keep FSM in right place? With another dummy variable?
+					s <= spc[25:24];
+					spc[31:8] <= spc[23:0];
+					spc[7:2] <= cpc;
+					spc[1:0] <= s;
+				default : begin
 					spc[31:8] <= spc[23:0]
-					spc[7:2] <= cpc
-			end
+					spc[7:2] <= cpc;
+					spc[1:0] <= 2'b10
+				end
+			endcase
+			p <= spc[1:0]
 		end
 	end
 
