@@ -67,7 +67,7 @@ module instruction_memory(clk, addr, out);
 		/*
 		 *	read from "program.hex" and store the instructions in instruction memory
 		 */
-		$readmemh("../../verilog/program.hex",instruction_memory);
+		$readmemh("verilog/program.hex",instruction_memory);
 	end
 
   always @(posedge clk) begin
