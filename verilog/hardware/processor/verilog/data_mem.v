@@ -19,8 +19,6 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	// Buffers
 	reg [31:0]		word_buf;
 	wire [31:0]		read_buf;
-	reg			memread_buf;
-	reg			memwrite_buf;
 	reg [31:0]		write_data_buffer;
 	reg [31:0]		addr_buf;
 	reg [3:0]		sign_mask_buf;
@@ -77,16 +75,7 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	
 	initial begin
 		$readmemh("verilog/data.hex", data_block);
-		clk_stall = 0;
-	end
-
-	/*
-	 *	LED register interfacing with I/O
-	 */
-	always @(posedge clk) begin
-		if(memwrite == 1'b1 && addr == 32'h2000) begin
-			led <= write_data[0];
-		end
+		clk_stall <= 0;
 	end
 
 	/*
@@ -95,12 +84,9 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	always @(posedge clk) begin
 		case (state)
 			IDLE: begin
-				clk_stall <= 0;
-				memread_buf <= memread;
-				memwrite_buf <= memwrite;
-				write_data_buffer <= write_data;
 				addr_buf <= addr;
 				sign_mask_buf <= sign_mask;
+				write_data_buffer <= write_data;
 				
 				if(memread==1'b1) begin
 					state <= READ_BUFFER;
@@ -131,6 +117,11 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 			WRITE: begin
 				clk_stall <= 0;
 				
+				if(addr_buf == 32'h2000)
+				begin
+					led <= write_data_buffer[0];
+				end
+
 				casez ({sign_mask_buf[2:1], addr_buf_byte_offset[1:0]})
 
 					// Write whole buffer
@@ -148,7 +139,6 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 
 				endcase 
 
-				//data_block[addr_buf_block_addr - 32'h1000] <= replacement_word;
 				state <= IDLE;
 			end
 
