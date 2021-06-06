@@ -15,3 +15,6 @@ verilog/mux2to1.v
 verilog/pipeline_registers.v
 verilog/program_counter.v
 verilog/register_file.v
+verilog/sub.v
+../dsp_block.v
+
