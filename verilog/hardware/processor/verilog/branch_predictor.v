@@ -85,8 +85,8 @@ module branch_predictor(
 		s = 2'b00;
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
-		spc = 32'b00000010000000100000001000000010
-		cpc = 6'b000000
+		spc = 32'b00000010000000100000001000000010;
+		cpc = 6'b000000;
 	end
 
 	always @(negedge clk) begin
@@ -121,13 +121,14 @@ module branch_predictor(
 					spc[31:8] <= spc[23:0];
 					spc[7:2] <= cpc;
 					spc[1:0] <= s;
+				end
 				default : begin
-					spc[31:8] <= spc[23:0]
+					spc[31:8] <= spc[23:0];
 					spc[7:2] <= cpc;
-					spc[1:0] <= 2'b10
+					spc[1:0] <= 2'b10;
 				end
 			endcase
-			p <= spc[1:0]
+			p <= spc[1:0];
 		end
 	end
 
