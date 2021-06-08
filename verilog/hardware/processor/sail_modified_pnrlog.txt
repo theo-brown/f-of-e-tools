@@ -3,10 +3,10 @@ Info: constrained 'led' to bel 'X19/Y31/io0'
 Info: Packing constants..
 Info: Packing IOs..
 Info: Packing LUT-FFs..
-Info:     1746 LCs used as LUT4 only
-Info:      189 LCs used as LUT4 and DFF
+Info:     1739 LCs used as LUT4 only
+Info:      196 LCs used as LUT4 and DFF
 Info: Packing non-LUT FFs..
-Info:      516 LCs used as DFF only
+Info:      518 LCs used as DFF only
 Info: Packing carries..
 Info:       33 LCs used as CARRY only
 Info: Packing RAMs..
@@ -23,7 +23,7 @@ Info:   PLL 'pll_inst.uut' has LOCK output, need to pass all outputs via LUT
 Info:   LUT strategy for LOCK: move all users to new LUT
 Info:   constrained 'pll_inst.uut_PLL$nextpnr_LOCK_lut_through' to X1/Y30/lc0
 Info: Promoting globals..
-Info: promoting clk_proc (fanout 621)
+Info: promoting clk_proc (fanout 630)
 Info: promoting clk (fanout 133)
 Info: promoting data_mem_inst.memread_SB_LUT4_I1_O[0] [cen] (fanout 67)
 Info: promoting data_mem_inst.read_data_SB_DFFE_Q_E [cen] (fanout 32)
@@ -31,13 +31,13 @@ Info: promoting $PACKER_GND_NET (fanout 10)
 Info: promoting pll (fanout 1)
 Info: Constraining chains...
 Info:        1 LCs used to legalise carry chains.
-Info: Checksum: 0x5328d87b
+Info: Checksum: 0x8d161f68
 
 Info: Annotating ports with timing budgets for target frequency 12.00 MHz
-Info: Checksum: 0xefcc1939
+Info: Checksum: 0xad738690
 
 Info: Device utilisation:
-Info: 	         ICESTORM_LC:  2488/ 5280    47%
+Info: 	         ICESTORM_LC:  2490/ 5280    47%
 Info: 	        ICESTORM_RAM:    30/   30   100%
 Info: 	               SB_IO:     1/   96     1%
 Info: 	               SB_GB:     7/    8    87%
@@ -54,252 +54,258 @@ Info: 	         SB_RGBA_DRV:     0/    1     0%
 Info: 	      ICESTORM_SPRAM:     0/    4     0%
 
 Info: Placed 5 cells based on constraints.
-Info: Creating initial analytic placement for 2463 cells, random placement wirelen = 66291.
-Info:     at initial placer iter 0, wirelen = 515
-Info:     at initial placer iter 1, wirelen = 593
-Info:     at initial placer iter 2, wirelen = 546
-Info:     at initial placer iter 3, wirelen = 593
+Info: Creating initial analytic placement for 2466 cells, random placement wirelen = 65921.
+Info:     at initial placer iter 0, wirelen = 570
+Info:     at initial placer iter 1, wirelen = 626
+Info:     at initial placer iter 2, wirelen = 602
+Info:     at initial placer iter 3, wirelen = 622
 Info: Running main analytical placer.
-Info:     at iteration #1, type ALL: wirelen solved = 547, spread = 22619, legal = 24679; time = 0.21s
-Info:     at iteration #2, type ALL: wirelen solved = 617, spread = 20947, legal = 23712; time = 0.23s
-Info:     at iteration #3, type ALL: wirelen solved = 807, spread = 21016, legal = 23995; time = 0.23s
-Info:     at iteration #4, type ALL: wirelen solved = 1555, spread = 20711, legal = 23284; time = 0.22s
-Info:     at iteration #5, type ALL: wirelen solved = 2009, spread = 20143, legal = 23243; time = 0.22s
-Info:     at iteration #6, type ALL: wirelen solved = 2862, spread = 19734, legal = 22530; time = 0.22s
-Info:     at iteration #7, type ALL: wirelen solved = 3282, spread = 20355, legal = 22574; time = 0.22s
-Info:     at iteration #8, type ALL: wirelen solved = 4051, spread = 20011, legal = 23120; time = 0.21s
-Info:     at iteration #9, type ALL: wirelen solved = 4311, spread = 19646, legal = 23585; time = 0.22s
-Info:     at iteration #10, type ALL: wirelen solved = 4782, spread = 19834, legal = 22302; time = 0.23s
-Info:     at iteration #11, type ALL: wirelen solved = 5113, spread = 19614, legal = 22479; time = 0.21s
-Info:     at iteration #12, type ALL: wirelen solved = 5626, spread = 19543, legal = 22133; time = 0.21s
-Info:     at iteration #13, type ALL: wirelen solved = 5714, spread = 19359, legal = 21576; time = 0.21s
-Info:     at iteration #14, type ALL: wirelen solved = 5845, spread = 19520, legal = 21633; time = 0.21s
-Info:     at iteration #15, type ALL: wirelen solved = 6119, spread = 19859, legal = 22215; time = 0.21s
-Info:     at iteration #16, type ALL: wirelen solved = 6701, spread = 19563, legal = 22535; time = 0.21s
-Info:     at iteration #17, type ALL: wirelen solved = 6918, spread = 19705, legal = 22377; time = 0.21s
-Info:     at iteration #18, type ALL: wirelen solved = 7427, spread = 19366, legal = 22211; time = 0.21s
-Info: HeAP Placer Time: 5.50s
-Info:   of which solving equations: 3.20s
-Info:   of which spreading cells: 0.46s
-Info:   of which strict legalisation: 0.63s
+Info:     at iteration #1, type ALL: wirelen solved = 603, spread = 22672, legal = 25299; time = 0.21s
+Info:     at iteration #2, type ALL: wirelen solved = 389, spread = 19705, legal = 23172; time = 0.22s
+Info:     at iteration #3, type ALL: wirelen solved = 359, spread = 20670, legal = 24047; time = 0.23s
+Info:     at iteration #4, type ALL: wirelen solved = 433, spread = 20529, legal = 24455; time = 0.22s
+Info:     at iteration #5, type ALL: wirelen solved = 798, spread = 20189, legal = 23539; time = 0.23s
+Info:     at iteration #6, type ALL: wirelen solved = 1029, spread = 20552, legal = 24241; time = 0.24s
+Info:     at iteration #7, type ALL: wirelen solved = 1439, spread = 20285, legal = 23127; time = 0.22s
+Info:     at iteration #8, type ALL: wirelen solved = 1700, spread = 21600, legal = 24693; time = 0.23s
+Info:     at iteration #9, type ALL: wirelen solved = 1910, spread = 21842, legal = 24509; time = 0.22s
+Info:     at iteration #10, type ALL: wirelen solved = 2136, spread = 21754, legal = 25277; time = 0.21s
+Info:     at iteration #11, type ALL: wirelen solved = 2450, spread = 21278, legal = 24178; time = 0.23s
+Info:     at iteration #12, type ALL: wirelen solved = 2813, spread = 21562, legal = 24260; time = 0.22s
+Info: HeAP Placer Time: 3.98s
+Info:   of which solving equations: 2.41s
+Info:   of which spreading cells: 0.31s
+Info:   of which strict legalisation: 0.41s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 2943, wirelen = 21576
-Info:   at iteration #5: temp = 0.000000, timing cost = 2754, wirelen = 15813
-Info:   at iteration #10: temp = 0.000000, timing cost = 2866, wirelen = 15227
-Info:   at iteration #15: temp = 0.000000, timing cost = 2872, wirelen = 14935
-Info:   at iteration #20: temp = 0.000000, timing cost = 2832, wirelen = 14668
-Info:   at iteration #25: temp = 0.000000, timing cost = 2783, wirelen = 14554
-Info:   at iteration #30: temp = 0.000000, timing cost = 2768, wirelen = 14504
-Info:   at iteration #31: temp = 0.000000, timing cost = 2791, wirelen = 14499 
-Info: SA placement time 10.46s
+Info:   at iteration #1: temp = 0.000000, timing cost = 15554, wirelen = 23127
+Info:   at iteration #5: temp = 0.000000, timing cost = 14163, wirelen = 16005
+Info:   at iteration #10: temp = 0.000000, timing cost = 13948, wirelen = 15085
+Info:   at iteration #15: temp = 0.000000, timing cost = 13874, wirelen = 14780
+Info:   at iteration #20: temp = 0.000000, timing cost = 13771, wirelen = 14531
+Info:   at iteration #25: temp = 0.000000, timing cost = 13745, wirelen = 14433
+Info:   at iteration #30: temp = 0.000000, timing cost = 13741, wirelen = 14394
+Info:   at iteration #35: temp = 0.000000, timing cost = 13743, wirelen = 14382
+Info:   at iteration #35: temp = 0.000000, timing cost = 13741, wirelen = 14382 
+Info: SA placement time 17.05s
 
-Info: Max frequency for clock 'clk_proc_$glb_clk': 16.82 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock      'clk_$glb_clk': 23.73 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'clk_proc_$glb_clk': 15.92 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock      'clk_$glb_clk': 21.88 MHz (PASS at 12.00 MHz)
 Info: Max frequency for clock      'pll_$glb_clk': 251.57 MHz (PASS at 30.02 MHz)
 
-Info: Max delay <async>                   -> posedge clk_$glb_clk     : 22.13 ns
-Info: Max delay <async>                   -> posedge clk_proc_$glb_clk: 29.73 ns
-Info: Max delay posedge clk_$glb_clk      -> <async>                  : 22.92 ns
-Info: Max delay posedge clk_$glb_clk      -> posedge clk_proc_$glb_clk: 47.78 ns
-Info: Max delay posedge clk_proc_$glb_clk -> <async>                  : 32.60 ns
-Info: Max delay posedge clk_proc_$glb_clk -> posedge clk_$glb_clk     : 54.09 ns
+Info: Max delay <async>                   -> posedge clk_$glb_clk     : 25.18 ns
+Info: Max delay <async>                   -> posedge clk_proc_$glb_clk: 33.68 ns
+Info: Max delay posedge clk_$glb_clk      -> <async>                  : 21.85 ns
+Info: Max delay posedge clk_$glb_clk      -> posedge clk_proc_$glb_clk: 51.31 ns
+Info: Max delay posedge clk_proc_$glb_clk -> <async>                  : 32.18 ns
+Info: Max delay posedge clk_proc_$glb_clk -> posedge clk_$glb_clk     : 57.02 ns
 
 Info: Slack histogram:
-Info:  legend: * represents 9 endpoint(s)
-Info:          + represents [1,9) endpoint(s)
-Info: [ 23877,  26696) |+
-Info: [ 26696,  29515) |+
-Info: [ 29515,  32334) |***+
-Info: [ 32334,  35153) |**+
-Info: [ 35153,  37972) |+
-Info: [ 37972,  40791) |+
-Info: [ 40791,  43610) |**+
-Info: [ 43610,  46429) |****+
-Info: [ 46429,  49248) |+
-Info: [ 49248,  52067) |**+
-Info: [ 52067,  54886) |*************+
-Info: [ 54886,  57705) |***********+
-Info: [ 57705,  60524) |************+
-Info: [ 60524,  63343) |************+
-Info: [ 63343,  66162) |*******************************+
-Info: [ 66162,  68981) |*******************************************+
-Info: [ 68981,  71800) |**************************+
-Info: [ 71800,  74619) |***************+
-Info: [ 74619,  77438) |*************************+
-Info: [ 77438,  80257) |************************************************************ 
-Info: Checksum: 0xfe5f61d9
+Info:  legend: * represents 11 endpoint(s)
+Info:          + represents [1,11) endpoint(s)
+Info: [ 20536,  23514) |+
+Info: [ 23514,  26492) |+
+Info: [ 26492,  29470) |*+
+Info: [ 29470,  32448) |***+
+Info: [ 32448,  35426) | 
+Info: [ 35426,  38404) |*+
+Info: [ 38404,  41382) |**+
+Info: [ 41382,  44360) |***+
+Info: [ 44360,  47338) | 
+Info: [ 47338,  50316) |*+
+Info: [ 50316,  53294) |****+
+Info: [ 53294,  56272) |*********+
+Info: [ 56272,  59250) |*****************+
+Info: [ 59250,  62228) |****+
+Info: [ 62228,  65206) |***************************+
+Info: [ 65206,  68184) |************************************+
+Info: [ 68184,  71162) |**********************+
+Info: [ 71162,  74140) |***************+
+Info: [ 74140,  77118) |*******************+
+Info: [ 77118,  80096) |************************************************************ 
+Info: Checksum: 0xf736ed82
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 8170 arcs.
+Info: Routing 8126 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:       1000 |       50        902 |   50   902 |      7261|       0.20       0.20|
-Info:       2000 |      119       1825 |   69   923 |      6354|       0.18       0.38|
-Info:       3000 |      362       2582 |  243   757 |      5646|       0.21       0.59|
-Info:       4000 |      588       3356 |  226   774 |      4962|       0.81       1.41|
-Info:       5000 |      771       4173 |  183   817 |      4210|       0.64       2.05|
-Info:       6000 |     1103       4841 |  332   668 |      3673|       0.66       2.71|
-Info:       7000 |     1327       5617 |  224   776 |      2983|       0.38       3.09|
-Info:       8000 |     1665       6279 |  338   662 |      2502|       0.77       3.86|
-Info:       9000 |     1949       6995 |  284   716 |      1930|       0.65       4.51|
-Info:      10000 |     2478       7466 |  529   471 |      1742|       1.07       5.59|
-Info:      11000 |     2925       8019 |  447   553 |      1458|       0.84       6.42|
-Info:      12000 |     3434       8510 |  509   491 |      1257|       1.05       7.47|
-Info:      13000 |     3883       9061 |  449   551 |      1037|       1.01       8.49|
-Info:      14000 |     4308       9636 |  425   575 |       814|       0.83       9.32|
-Info:      15000 |     4668      10276 |  360   640 |       397|       1.02      10.34|
-Info:      16000 |     5049      10895 |  381   619 |        66|       1.13      11.47|
-Info:      16102 |     5082      10965 |   33    70 |         0|       0.11      11.58|
+Info:       1000 |       65        885 |   65   885 |      7202|       0.40       0.40|
+Info:       2000 |      166       1778 |  101   893 |      6332|       0.45       0.85|
+Info:       3000 |      334       2610 |  168   832 |      5538|       0.37       1.22|
+Info:       4000 |      496       3448 |  162   838 |      4732|       0.94       2.16|
+Info:       5000 |      696       4248 |  200   800 |      3999|       0.65       2.81|
+Info:       6000 |     1016       4928 |  320   680 |      3428|       0.95       3.76|
+Info:       7000 |     1272       5672 |  256   744 |      2799|       0.83       4.59|
+Info:       8000 |     1492       6452 |  220   780 |      2121|       1.12       5.71|
+Info:       9000 |     1823       7121 |  331   669 |      1579|       1.35       7.06|
+Info:      10000 |     2188       7756 |  365   635 |      1186|       1.96       9.01|
+Info:      11000 |     2620       8324 |  432   568 |       897|       1.85      10.86|
+Info:      12000 |     2823       9121 |  203   797 |       177|       1.47      12.33|
+Info:      12275 |     2891       9329 |   68   208 |         0|       0.67      13.00|
 Info: Routing complete.
-Info: Router1 time 11.58s
-Info: Checksum: 0xb6d2fa42
+Info: Router1 time 13.00s
+Info: Checksum: 0xd83af2b7
 
 Info: Critical path report for clock 'clk_proc_$glb_clk' (posedge -> posedge):
 Info: curr total
-Info:  1.4  1.4  Source processor.ex_mem_reg.data_out_SB_DFF_Q_7_DFFLC.O
-Info:  1.8  3.2    Net processor.ex_mem_out[147] budget 0.000000 ns (8,20) -> (8,20)
-Info:                Sink processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0_SB_LUT4_O_LC.I0
+Info:  1.4  1.4  Source processor.ex_mem_reg.data_out_SB_DFF_Q_14_DFFLC.O
+Info:  1.8  3.2    Net processor.ex_mem_out[140] budget 0.000000 ns (2,16) -> (1,16)
+Info:                Sink processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.I1
 Info:                Defined in:
 Info:                  verilog/cpu.v:92.16-92.26
-Info:  1.3  4.4  Source processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0_SB_LUT4_O_LC.O
-Info:  1.8  6.2    Net processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0[0] budget 0.000000 ns (8,20) -> (8,20)
-Info:                Sink processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_LC.I0
+Info:  1.2  4.4  Source processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:  1.8  6.1    Net processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3[2] budget 0.000000 ns (1,16) -> (1,17)
+Info:                Sink processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3  7.5  Source processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_LC.O
-Info:  1.8  9.2    Net processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_O[1] budget 0.000000 ns (8,20) -> (9,19)
-Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0_SB_LUT4_O_LC.I2
+Info:  0.9  7.0  Source processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
+Info:  1.8  8.8    Net processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O[0] budget 0.000000 ns (1,17) -> (1,18)
+Info:                Sink processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O_SB_LUT4_I2_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 10.4  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0_SB_LUT4_O_LC.O
-Info:  3.1 13.5    Net processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0[3] budget 0.000000 ns (9,19) -> (9,15)
-Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.I3
+Info:  1.2 10.0  Source processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O_SB_LUT4_I2_LC.O
+Info:  3.4 13.4    Net processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0[0] budget 0.000000 ns (1,18) -> (9,18)
+Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 14.4  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.O
-Info:  4.2 18.6    Net processor.mfwd2 budget 0.000000 ns (9,15) -> (12,4)
+Info:  1.3 14.7  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.O
+Info:  3.7 18.4    Net processor.mfwd2 budget 0.000000 ns (9,18) -> (10,8)
 Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.I3
 Info:                Defined in:
 Info:                  verilog/cpu.v:159.9-159.14
-Info:  0.9 19.5  Source processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.O
-Info:  1.8 21.3    Net processor.mem_fwd2_mux_out[0] budget 0.000000 ns (12,4) -> (12,4)
+Info:  0.9 19.3  Source processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8 21.0    Net processor.mem_fwd2_mux_out[0] budget 0.000000 ns (10,8) -> (11,7)
 Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:155.15-155.31
-Info:  1.2 22.5  Source processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.O
-Info:  3.5 26.0    Net data_WrData[0] budget 0.000000 ns (12,4) -> (17,6)
+Info:  1.2 22.2  Source processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  4.1 26.4    Net data_WrData[0] budget 0.000000 ns (11,7) -> (17,12)
 Info:                Sink processor.alu_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  toplevel.v:32.13-32.24
-Info:  1.2 27.2  Source processor.alu_mux.out_SB_LUT4_O_31_LC.O
-Info:  2.4 29.6    Net processor.alu_mux_out[0] budget 3.931000 ns (17,6) -> (18,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
+Info:  1.2 27.6  Source processor.alu_mux.out_SB_LUT4_O_31_LC.O
+Info:  3.1 30.6    Net processor.alu_mux_out[0] budget 3.647000 ns (17,12) -> (18,15)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_1_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:131.15-131.26
-Info:  0.9 30.4  Source processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
-Info:  2.4 32.9    Net processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_I1[0] budget 3.931000 ns (18,4) -> (17,5)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_LC.I2
+Info:  1.2 31.8  Source processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_1_LC.O
+Info:  1.8 33.6    Net processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_I2[0] budget 3.647000 ns (18,15) -> (18,15)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_O_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 34.1  Source processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_LC.O
-Info:  1.8 35.8    Net processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I2_O[0] budget 3.931000 ns (17,5) -> (17,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_I1_SB_LUT4_O_LC.I1
+Info:  1.3 34.9  Source processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_O_LC.O
+Info:  1.8 36.6    Net processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I1_SB_LUT4_I0_O[2] budget 3.647000 ns (18,15) -> (18,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.I2
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 37.1  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_I1_SB_LUT4_O_LC.O
-Info:  1.8 38.8    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_I0[1] budget 3.931000 ns (17,4) -> (17,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_LC.I1
+Info:  1.2 37.8  Source processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.O
+Info:  2.8 40.7    Net processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_I0[0] budget 3.647000 ns (18,14) -> (15,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 40.0  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_LC.O
-Info:  1.8 41.8    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2[0] budget 3.931000 ns (17,4) -> (16,5)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_LC.I2
+Info:  1.3 42.0  Source processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_LC.O
+Info:  3.0 45.0    Net processor.alu_main.ALUOut_SB_LUT4_O_12_I2[0] budget 3.647000 ns (15,14) -> (15,17)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_20_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 43.0  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_LC.O
-Info:  3.0 46.0    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I0[0] budget 3.931000 ns (16,5) -> (16,11)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_LC.I0
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3 47.3  Source processor.alu_main.ALUOut_SB_LUT4_O_6_LC.O
-Info:  3.1 50.3    Net processor.alu_result[17] budget 3.931000 ns (16,11) -> (16,14)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I0
+Info:  1.2 46.2  Source processor.alu_main.ALUOut_SB_LUT4_O_20_LC.O
+Info:  1.8 48.0    Net processor.alu_result[19] budget 3.647000 ns (15,17) -> (14,17)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:135.15-135.25
-Info:  1.3 51.6  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
-Info:  3.0 54.6    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1[1] budget 3.931000 ns (16,14) -> (14,11)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_LC.I2
+Info:  1.2 49.2  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.O
+Info:  3.1 52.2    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_I0[0] budget 3.647000 ns (14,17) -> (14,13)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 55.8  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_LC.O
-Info:  3.0 58.7    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0[2] budget 3.931000 ns (14,11) -> (11,12)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I2
+Info:  1.3 53.5  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_LC.O
+Info:  2.4 55.9    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0[0] budget 3.647000 ns (14,13) -> (14,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 59.9  Setup processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I2
-Info: 20.0 ns logic, 39.9 ns routing
+Info:  1.3 57.2  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_LC.O
+Info:  1.8 59.0    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2[2] budget 3.647000 ns (14,16) -> (13,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I2
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 60.2  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
+Info:  1.8 61.9    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1[3] budget 3.647000 ns (13,16) -> (13,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.8 62.8  Setup processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I3
+Info: 21.3 ns logic, 41.4 ns routing
 
 Info: Critical path report for clock 'clk_$glb_clk' (posedge -> posedge):
 Info: curr total
-Info:  1.4  1.4  Source data_mem_inst.read_buf_SB_LUT4_O_1_LC.O
-Info:  4.2  5.6    Net data_out[4] budget 0.000000 ns (12,11) -> (5,4)
-Info:                Sink processor.dataMemOut_fwd_mux.out_SB_LUT4_O_27_LC.I2
+Info:  1.4  1.4  Source data_mem_inst.read_buf_SB_LUT4_O_31_LC.O
+Info:  1.8  3.2    Net data_out[0] budget 0.000000 ns (11,7) -> (10,7)
+Info:                Sink processor.dataMemOut_fwd_mux.out_SB_LUT4_O_31_LC.I1
 Info:                Defined in:
 Info:                  toplevel.v:30.13-30.21
-Info:  1.2  6.8  Source processor.dataMemOut_fwd_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8  8.6    Net processor.dataMemOut_fwd_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.I2
+Info:  1.2  4.4  Source processor.dataMemOut_fwd_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8  6.1    Net processor.dataMemOut_fwd_mux_out[0] budget 0.000000 ns (10,7) -> (10,8)
+Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.I1
 Info:                Defined in:
 Info:                  verilog/cpu.v:153.15-153.37
-Info:  1.2  9.8  Source processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8 11.5    Net processor.mem_fwd2_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.I1
+Info:  1.2  7.4  Source processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8  9.1    Net processor.mem_fwd2_mux_out[0] budget 0.000000 ns (10,8) -> (11,7)
+Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:155.15-155.31
-Info:  1.2 12.8  Source processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  4.7 17.5    Net data_WrData[4] budget 0.000000 ns (5,4) -> (15,10)
-Info:                Sink processor.alu_mux.out_SB_LUT4_O_27_LC.I1
+Info:  1.2 10.3  Source processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  4.1 14.5    Net data_WrData[0] budget 0.000000 ns (11,7) -> (17,12)
+Info:                Sink processor.alu_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  toplevel.v:32.13-32.24
-Info:  1.2 18.7  Source processor.alu_mux.out_SB_LUT4_O_27_LC.O
-Info:  3.7 22.4    Net processor.alu_mux_out[4] budget 4.368000 ns (15,10) -> (16,2)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_1_I1_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_I2_LC.I3
+Info:  1.2 15.7  Source processor.alu_mux.out_SB_LUT4_O_31_LC.O
+Info:  3.6 19.3    Net processor.alu_mux_out[0] budget 3.647000 ns (17,12) -> (18,18)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_5_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.I3
 Info:                Defined in:
 Info:                  verilog/cpu.v:131.15-131.26
-Info:  0.9 23.3  Source processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_1_I1_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_I2_LC.O
-Info:  1.8 25.0    Net processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_1_I1[2] budget 4.368000 ns (16,2) -> (17,1)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_LC.I3
+Info:  0.9 20.2  Source processor.alu_main.ALUOut_SB_LUT4_O_5_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:  1.8 21.9    Net processor.alu_main.ALUOut_SB_LUT4_O_5_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2[0] budget 3.647000 ns (18,18) -> (18,17)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_16_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_I2_I1_SB_LUT4_I1_O_SB_LUT4_O_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 25.9  Source processor.alu_main.ALUOut_SB_LUT4_O_14_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_LC.O
-Info:  3.1 29.0    Net processor.alu_main.ALUOut_SB_LUT4_O_14_I0_SB_LUT4_O_2_I2[1] budget 3.931000 ns (17,1) -> (16,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_25_I0_SB_LUT4_O_1_LC.I2
+Info:  1.2 23.2  Source processor.alu_main.ALUOut_SB_LUT4_O_16_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_I2_I1_SB_LUT4_I1_O_SB_LUT4_O_LC.O
+Info:  1.8 24.9    Net processor.alu_main.ALUOut_SB_LUT4_O_16_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_I2_I1_SB_LUT4_I1_O[0] budget 3.647000 ns (18,17) -> (17,17)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 30.2  Source processor.alu_main.ALUOut_SB_LUT4_O_25_I0_SB_LUT4_O_1_LC.O
-Info:  4.1 34.3    Net processor.alu_main.ALUOut_SB_LUT4_O_25_I0[2] budget 3.931000 ns (16,4) -> (14,9)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_25_LC.I2
+Info:  1.3 26.2  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:  3.0 29.2    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_I3[2] budget 3.647000 ns (17,17) -> (15,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.I3
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 35.5  Source processor.alu_main.ALUOut_SB_LUT4_O_25_LC.O
-Info:  2.8 38.4    Net processor.alu_result[9] budget 4.665000 ns (14,9) -> (10,9)
-Info:                Sink processor.lui_mux.out_SB_LUT4_O_22_LC.I1
+Info:  0.9 30.0  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.O
+Info:  2.4 32.4    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0[0] budget 3.647000 ns (15,14) -> (14,12)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 33.7  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_LC.O
+Info:  3.0 36.7    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I1[0] budget 3.647000 ns (14,12) -> (14,16)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_LC.I1
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 37.9  Source processor.alu_main.ALUOut_SB_LUT4_O_6_LC.O
+Info:  1.8 39.7    Net processor.alu_result[20] budget 4.299000 ns (14,16) -> (13,17)
+Info:                Sink processor.lui_mux.out_SB_LUT4_O_11_LC.I1
 Info:                Defined in:
 Info:                  verilog/cpu.v:135.15-135.25
-Info:  1.2 39.6  Source processor.lui_mux.out_SB_LUT4_O_22_LC.O
-Info:  1.8 41.4    Net data_addr[9] budget 4.665000 ns (10,9) -> (10,10)
-Info:                Sink data_mem_inst.addr_buf_SB_DFFE_Q_22_DFFLC.I0
+Info:  1.2 40.9  Source processor.lui_mux.out_SB_LUT4_O_11_LC.O
+Info:  3.0 43.9    Net data_addr[20] budget 4.299000 ns (13,17) -> (14,21)
+Info:                Sink data_mem_inst.addr_buf_SB_DFFE_Q_11_DFFLC.I0
 Info:                Defined in:
 Info:                  toplevel.v:31.13-31.22
-Info:  1.2 42.6  Setup data_mem_inst.addr_buf_SB_DFFE_Q_22_DFFLC.I0
-Info: 12.9 ns logic, 29.7 ns routing
+Info:  1.2 45.1  Setup data_mem_inst.addr_buf_SB_DFFE_Q_11_DFFLC.I0
+Info: 15.5 ns logic, 29.6 ns routing
 
 Info: Critical path report for clock 'pll_$glb_clk' (posedge -> posedge):
 Info: curr total
 Info:  1.4  1.4  Source freq_div.output_signal_SB_LUT4_I3_LC.O
-Info:  1.8  3.2    Net clk budget 31.098000 ns (18,27) -> (18,27)
+Info:  1.8  3.2    Net clk budget 31.098000 ns (13,30) -> (13,30)
 Info:                Sink freq_div.output_signal_SB_LUT4_I3_LC.I3
 Info:                Defined in:
 Info:                  toplevel.v:13.8-13.11
@@ -308,337 +314,362 @@ Info: 2.2 ns logic, 1.8 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> 'posedge clk_$glb_clk':
 Info: curr total
-Info:  0.0  0.0  Source processor.alu_main.alu_adder.SB_MAC16_adder_DSP.O_3
-Info:  3.6  3.6    Net processor.alu_main.adder_o[3] budget 9.266000 ns (25,15) -> (23,10)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_O_LC.I3
-Info:                Defined in:
-Info:                  verilog/alu.v:37.14-37.21
-Info:  0.9  4.5  Source processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_O_LC.O
-Info:  4.1  8.6    Net processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_I2_SB_LUT4_O_1_I2[3] budget 9.265000 ns (23,10) -> (15,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_I2_SB_LUT4_O_1_LC.I3
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9  9.5  Source processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_I2_SB_LUT4_O_1_LC.O
-Info:  1.8 11.3    Net processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_I2[3] budget 4.324000 ns (15,4) -> (15,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_LC.I3
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 12.1  Source processor.alu_main.ALUOut_SB_LUT4_O_30_I2_SB_LUT4_O_LC.O
-Info:  1.8 13.9    Net processor.alu_main.ALUOut_SB_LUT4_O_30_I2[3] budget 3.931000 ns (15,4) -> (15,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_30_LC.I3
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 14.8  Source processor.alu_main.ALUOut_SB_LUT4_O_30_LC.O
-Info:  3.0 17.7    Net processor.alu_result[3] budget 4.667000 ns (15,4) -> (12,5)
-Info:                Sink processor.lui_mux.out_SB_LUT4_O_28_LC.I1
-Info:                Defined in:
-Info:                  verilog/cpu.v:135.15-135.25
-Info:  1.2 18.9  Source processor.lui_mux.out_SB_LUT4_O_28_LC.O
-Info:  1.8 20.7    Net data_addr[3] budget 4.667000 ns (12,5) -> (11,5)
-Info:                Sink data_mem_inst.addr_buf_SB_DFFE_Q_28_DFFLC.I0
-Info:                Defined in:
-Info:                  toplevel.v:31.13-31.22
-Info:  1.2 21.9  Setup data_mem_inst.addr_buf_SB_DFFE_Q_28_DFFLC.I0
-Info: 6.0 ns logic, 16.0 ns routing
-
-Info: Critical path report for cross-domain path '<async>' -> 'posedge clk_proc_$glb_clk':
-Info: curr total
 Info:  0.0  0.0  Source processor.alu_main.alu_sub.SB_MAC16_adder_DSP.CO
-Info:  4.0  4.0    Net processor.alu_main.sub_co budget 9.266000 ns (25,10) -> (14,10)
+Info:  4.0  4.0    Net processor.alu_main.sub_co budget 7.202000 ns (25,15) -> (14,15)
 Info:                Sink processor.alu_main.sub_co_SB_LUT4_I0_LC.I0
 Info:                Defined in:
 Info:                  verilog/alu.v:45.7-45.13
 Info:  1.3  5.3  Source processor.alu_main.sub_co_SB_LUT4_I0_LC.O
-Info:  3.7  9.0    Net processor.alu_main.sub_co_SB_LUT4_I0_O[2] budget 4.289000 ns (14,10) -> (13,3)
-Info:                Sink processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I2_LC.I2
+Info:  1.8  7.1    Net processor.alu_main.sub_co_SB_LUT4_I0_O[1] budget 3.647000 ns (14,15) -> (14,15)
+Info:                Sink processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I1_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 10.2  Source processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I2_LC.O
-Info:  1.8 12.0    Net processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I2_O[3] budget 4.289000 ns (13,3) -> (14,3)
-Info:                Sink processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_LC.I3
+Info:  1.2  8.3  Source processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I1_LC.O
+Info:  1.8 10.1    Net processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I1_O[0] budget 3.647000 ns (14,15) -> (14,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_I1_SB_LUT4_O_2_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 12.9  Source processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_LC.O
-Info:  1.8 14.6    Net processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O[3] budget 4.288000 ns (14,3) -> (14,3)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_11_LC.I3
+Info:  1.2 11.3  Source processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_I1_SB_LUT4_O_2_LC.O
+Info:  3.1 14.4    Net processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_I1[2] budget 3.647000 ns (14,14) -> (15,9)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_LC.I2
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 15.5  Source processor.alu_main.ALUOut_SB_LUT4_O_11_LC.O
-Info:  1.8 17.3    Net processor.alu_result[0] budget 3.931000 ns (14,3) -> (13,4)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.I2
+Info:  1.2 15.6  Source processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_LC.O
+Info:  1.8 17.3    Net processor.alu_main.ALUOut_SB_LUT4_O_14_I2[3] budget 3.647000 ns (15,9) -> (15,9)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.9 18.2  Source processor.alu_main.ALUOut_SB_LUT4_O_14_LC.O
+Info:  2.3 20.5    Net processor.alu_result[0] budget 4.698000 ns (15,9) -> (12,9)
+Info:                Sink processor.lui_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:135.15-135.25
-Info:  1.2 18.5  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.O
-Info:  3.1 21.5    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_2_I0[0] budget 3.931000 ns (13,4) -> (14,10)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_2_LC.I0
+Info:  1.2 21.7  Source processor.lui_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8 23.5    Net data_addr[0] budget 4.698000 ns (12,9) -> (12,9)
+Info:                Sink data_mem_inst.addr_buf_SB_DFFE_Q_31_DFFLC.I0
+Info:                Defined in:
+Info:                  toplevel.v:31.13-31.22
+Info:  1.2 24.7  Setup data_mem_inst.addr_buf_SB_DFFE_Q_31_DFFLC.I0
+Info: 8.3 ns logic, 16.4 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk_proc_$glb_clk':
+Info: curr total
+Info:  0.0  0.0  Source processor.alu_main.alu_sub.SB_MAC16_adder_DSP.CO
+Info:  4.0  4.0    Net processor.alu_main.sub_co budget 7.202000 ns (25,15) -> (14,15)
+Info:                Sink processor.alu_main.sub_co_SB_LUT4_I0_LC.I0
+Info:                Defined in:
+Info:                  verilog/alu.v:45.7-45.13
+Info:  1.3  5.3  Source processor.alu_main.sub_co_SB_LUT4_I0_LC.O
+Info:  1.8  7.1    Net processor.alu_main.sub_co_SB_LUT4_I0_O[1] budget 3.647000 ns (14,15) -> (14,15)
+Info:                Sink processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I1_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3 22.8  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_2_LC.O
-Info:  1.8 24.6    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1[0] budget 3.931000 ns (14,10) -> (14,11)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_LC.I1
+Info:  1.2  8.3  Source processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I1_LC.O
+Info:  1.8 10.1    Net processor.alu_main.sub_co_SB_LUT4_I0_O_SB_LUT4_I1_O[0] budget 3.647000 ns (14,15) -> (14,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_I1_SB_LUT4_O_2_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 25.8  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_LC.O
-Info:  3.0 28.8    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0[2] budget 3.931000 ns (14,11) -> (11,12)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I2
+Info:  1.2 11.3  Source processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_I1_SB_LUT4_O_2_LC.O
+Info:  3.1 14.4    Net processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_I1[2] budget 3.647000 ns (14,14) -> (15,9)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_LC.I2
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 29.9  Setup processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I2
-Info: 9.1 ns logic, 20.8 ns routing
+Info:  1.2 15.6  Source processor.alu_main.ALUOut_SB_LUT4_O_14_I2_SB_LUT4_O_LC.O
+Info:  1.8 17.3    Net processor.alu_main.ALUOut_SB_LUT4_O_14_I2[3] budget 3.647000 ns (15,9) -> (15,9)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_14_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.9 18.2  Source processor.alu_main.ALUOut_SB_LUT4_O_14_LC.O
+Info:  1.8 20.0    Net processor.alu_result[0] budget 3.647000 ns (15,9) -> (14,10)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_31_I2_SB_LUT4_I1_LC.I0
+Info:                Defined in:
+Info:                  verilog/cpu.v:135.15-135.25
+Info:  1.3 21.2  Source processor.alu_main.ALUOut_SB_LUT4_O_31_I2_SB_LUT4_I1_LC.O
+Info:  3.1 24.3    Net processor.alu_main.ALUOut_SB_LUT4_O_31_I2_SB_LUT4_I1_O[2] budget 3.647000 ns (14,10) -> (14,15)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_31_I2_SB_LUT4_I1_O_SB_LUT4_I1_LC.I2
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 25.5  Source processor.alu_main.ALUOut_SB_LUT4_O_31_I2_SB_LUT4_I1_O_SB_LUT4_I1_LC.O
+Info:  1.8 27.3    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0[3] budget 3.647000 ns (14,15) -> (14,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.9 28.1  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_LC.O
+Info:  1.8 29.9    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2[2] budget 3.647000 ns (14,16) -> (13,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I2
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 31.1  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
+Info:  1.8 32.9    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1[3] budget 3.647000 ns (13,16) -> (13,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.8 33.7  Setup processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I3
+Info: 11.2 ns logic, 22.5 ns routing
 
 Info: Critical path report for cross-domain path 'posedge clk_$glb_clk' -> '<async>':
 Info: curr total
-Info:  1.4  1.4  Source data_mem_inst.read_buf_SB_LUT4_O_1_LC.O
-Info:  4.2  5.6    Net data_out[4] budget 0.000000 ns (12,11) -> (5,4)
-Info:                Sink processor.dataMemOut_fwd_mux.out_SB_LUT4_O_27_LC.I2
+Info:  1.4  1.4  Source data_mem_inst.read_buf_SB_LUT4_O_4_LC.O
+Info:  3.6  5.0    Net data_out[27] budget 0.000000 ns (14,22) -> (10,23)
+Info:                Sink processor.dataMemOut_fwd_mux.out_SB_LUT4_O_4_LC.I2
 Info:                Defined in:
 Info:                  toplevel.v:30.13-30.21
-Info:  1.2  6.8  Source processor.dataMemOut_fwd_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8  8.6    Net processor.dataMemOut_fwd_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.I2
+Info:  1.2  6.2  Source processor.dataMemOut_fwd_mux.out_SB_LUT4_O_4_LC.O
+Info:  1.8  8.0    Net processor.dataMemOut_fwd_mux_out[27] budget 0.000000 ns (10,23) -> (10,23)
+Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_4_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:153.15-153.37
-Info:  1.2  9.8  Source processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8 11.5    Net processor.mem_fwd2_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.I1
+Info:  1.2  9.2  Source processor.mem_fwd2_mux.out_SB_LUT4_O_4_LC.O
+Info:  1.8 10.9    Net processor.mem_fwd2_mux_out[27] budget 0.000000 ns (10,23) -> (11,23)
+Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_4_LC.I1
 Info:                Defined in:
 Info:                  verilog/cpu.v:155.15-155.31
-Info:  1.2 12.8  Source processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  4.7 17.5    Net data_WrData[4] budget 0.000000 ns (5,4) -> (15,10)
-Info:                Sink processor.alu_mux.out_SB_LUT4_O_27_LC.I1
+Info:  1.2 12.2  Source processor.wb_fwd2_mux.out_SB_LUT4_O_4_LC.O
+Info:  3.0 15.1    Net data_WrData[27] budget 0.000000 ns (11,23) -> (14,21)
+Info:                Sink processor.alu_mux.out_SB_LUT4_O_4_LC.I1
 Info:                Defined in:
 Info:                  toplevel.v:32.13-32.24
-Info:  1.2 18.7  Source processor.alu_mux.out_SB_LUT4_O_27_LC.O
-Info:  4.7 23.4    Net processor.alu_mux_out[4] budget 9.232000 ns (15,10) -> (25,15)
-Info:                Sink processor.alu_main.alu_adder.SB_MAC16_adder_DSP.D_4
+Info:  1.2 16.3  Source processor.alu_mux.out_SB_LUT4_O_4_LC.O
+Info:  5.3 21.7    Net processor.alu_mux_out[27] budget 9.232000 ns (14,21) -> (25,10)
+Info:                Sink processor.alu_main.alu_adder.SB_MAC16_adder_DSP.A_11
 Info:                Defined in:
 Info:                  verilog/cpu.v:131.15-131.26
-Info:  0.1 23.5  Setup processor.alu_main.alu_adder.SB_MAC16_adder_DSP.D_4
-Info: 6.4 ns logic, 17.1 ns routing
+Info:  0.1 21.8  Setup processor.alu_main.alu_adder.SB_MAC16_adder_DSP.A_11
+Info: 6.4 ns logic, 15.4 ns routing
 
 Info: Critical path report for cross-domain path 'posedge clk_$glb_clk' -> 'posedge clk_proc_$glb_clk':
 Info: curr total
-Info:  1.4  1.4  Source data_mem_inst.read_buf_SB_LUT4_O_1_LC.O
-Info:  4.2  5.6    Net data_out[4] budget 0.000000 ns (12,11) -> (5,4)
-Info:                Sink processor.dataMemOut_fwd_mux.out_SB_LUT4_O_27_LC.I2
+Info:  1.4  1.4  Source data_mem_inst.read_buf_SB_LUT4_O_31_LC.O
+Info:  1.8  3.2    Net data_out[0] budget 0.000000 ns (11,7) -> (10,7)
+Info:                Sink processor.dataMemOut_fwd_mux.out_SB_LUT4_O_31_LC.I1
 Info:                Defined in:
 Info:                  toplevel.v:30.13-30.21
-Info:  1.2  6.8  Source processor.dataMemOut_fwd_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8  8.6    Net processor.dataMemOut_fwd_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.I2
+Info:  1.2  4.4  Source processor.dataMemOut_fwd_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8  6.1    Net processor.dataMemOut_fwd_mux_out[0] budget 0.000000 ns (10,7) -> (10,8)
+Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.I1
 Info:                Defined in:
 Info:                  verilog/cpu.v:153.15-153.37
-Info:  1.2  9.8  Source processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8 11.5    Net processor.mem_fwd2_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.I1
-Info:                Defined in:
-Info:                  verilog/cpu.v:155.15-155.31
-Info:  1.2 12.8  Source processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  4.7 17.5    Net data_WrData[4] budget 0.000000 ns (5,4) -> (15,10)
-Info:                Sink processor.alu_mux.out_SB_LUT4_O_27_LC.I1
-Info:                Defined in:
-Info:                  toplevel.v:32.13-32.24
-Info:  1.2 18.7  Source processor.alu_mux.out_SB_LUT4_O_27_LC.O
-Info:  3.1 21.8    Net processor.alu_mux_out[4] budget 4.289000 ns (15,10) -> (15,5)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3_LC.I2
-Info:                Defined in:
-Info:                  verilog/cpu.v:131.15-131.26
-Info:  1.2 23.0  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3_LC.O
-Info:  4.2 27.2    Net processor.alu_main.ALUOut_SB_LUT4_O_16_I0_SB_LUT4_O_I0_SB_LUT4_O_1_I1[1] budget 4.368000 ns (15,5) -> (18,14)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_2_I2_SB_LUT4_I2_O_SB_LUT4_O_I0_SB_LUT4_O_2_LC.I2
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 28.4  Source processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_2_I2_SB_LUT4_I2_O_SB_LUT4_O_I0_SB_LUT4_O_2_LC.O
-Info:  1.8 30.2    Net processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_2_I2_SB_LUT4_I2_O_SB_LUT4_O_I0[1] budget 3.931000 ns (18,14) -> (18,15)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_2_I2_SB_LUT4_I2_O_SB_LUT4_O_LC.I1
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 31.4  Source processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_2_I2_SB_LUT4_I2_O_SB_LUT4_O_LC.O
-Info:  1.8 33.2    Net processor.alu_main.ALUOut_SB_LUT4_O_21_I1_SB_LUT4_O_2_I2_SB_LUT4_I2_O[3] budget 3.931000 ns (18,15) -> (17,15)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_12_LC.I3
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 34.0  Source processor.alu_main.ALUOut_SB_LUT4_O_12_LC.O
-Info:  1.8 35.8    Net processor.alu_result[30] budget 3.931000 ns (17,15) -> (17,15)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_I1_SB_LUT4_O_2_LC.I2
-Info:                Defined in:
-Info:                  verilog/cpu.v:135.15-135.25
-Info:  1.2 37.0  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_I1_SB_LUT4_O_2_LC.O
-Info:  1.8 38.8    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_I1[1] budget 3.931000 ns (17,15) -> (16,14)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I1
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 40.0  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
-Info:  3.0 42.9    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_I1[1] budget 3.931000 ns (16,14) -> (14,11)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_LC.I2
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 44.2  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I0_SB_LUT4_O_LC.O
-Info:  3.0 47.1    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I0[2] budget 3.931000 ns (14,11) -> (11,12)
-Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I2
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 48.3  Setup processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I2
-Info: 15.6 ns logic, 32.7 ns routing
-
-Info: Critical path report for cross-domain path 'posedge clk_proc_$glb_clk' -> '<async>':
-Info: curr total
-Info:  1.4  1.4  Source processor.ex_mem_reg.data_out_SB_DFF_Q_7_DFFLC.O
-Info:  1.8  3.2    Net processor.ex_mem_out[147] budget 0.000000 ns (8,20) -> (8,20)
-Info:                Sink processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0_SB_LUT4_O_LC.I0
-Info:                Defined in:
-Info:                  verilog/cpu.v:92.16-92.26
-Info:  1.3  4.4  Source processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0_SB_LUT4_O_LC.O
-Info:  1.8  6.2    Net processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0[0] budget 0.000000 ns (8,20) -> (8,20)
-Info:                Sink processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_LC.I0
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3  7.5  Source processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_LC.O
-Info:  1.8  9.2    Net processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_O[1] budget 0.000000 ns (8,20) -> (9,19)
-Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0_SB_LUT4_O_LC.I2
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 10.4  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0_SB_LUT4_O_LC.O
-Info:  3.1 13.5    Net processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0[3] budget 0.000000 ns (9,19) -> (9,15)
-Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.I3
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 14.4  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.O
-Info:  4.2 18.6    Net processor.mfwd2 budget 0.000000 ns (9,15) -> (5,4)
-Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.I3
-Info:                Defined in:
-Info:                  verilog/cpu.v:159.9-159.14
-Info:  0.9 19.5  Source processor.mem_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  1.8 21.3    Net processor.mem_fwd2_mux_out[4] budget 0.000000 ns (5,4) -> (5,4)
-Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.I1
-Info:                Defined in:
-Info:                  verilog/cpu.v:155.15-155.31
-Info:  1.2 22.5  Source processor.wb_fwd2_mux.out_SB_LUT4_O_27_LC.O
-Info:  4.7 27.2    Net data_WrData[4] budget 0.000000 ns (5,4) -> (15,10)
-Info:                Sink processor.alu_mux.out_SB_LUT4_O_27_LC.I1
-Info:                Defined in:
-Info:                  toplevel.v:32.13-32.24
-Info:  1.2 28.4  Source processor.alu_mux.out_SB_LUT4_O_27_LC.O
-Info:  4.7 33.1    Net processor.alu_mux_out[4] budget 9.232000 ns (15,10) -> (25,15)
-Info:                Sink processor.alu_main.alu_adder.SB_MAC16_adder_DSP.D_4
-Info:                Defined in:
-Info:                  verilog/cpu.v:131.15-131.26
-Info:  0.1 33.2  Setup processor.alu_main.alu_adder.SB_MAC16_adder_DSP.D_4
-Info: 9.5 ns logic, 23.7 ns routing
-
-Info: Critical path report for cross-domain path 'posedge clk_proc_$glb_clk' -> 'posedge clk_$glb_clk':
-Info: curr total
-Info:  1.4  1.4  Source processor.ex_mem_reg.data_out_SB_DFF_Q_7_DFFLC.O
-Info:  1.8  3.2    Net processor.ex_mem_out[147] budget 0.000000 ns (8,20) -> (8,20)
-Info:                Sink processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0_SB_LUT4_O_LC.I0
-Info:                Defined in:
-Info:                  verilog/cpu.v:92.16-92.26
-Info:  1.3  4.4  Source processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0_SB_LUT4_O_LC.O
-Info:  1.8  6.2    Net processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_I0[0] budget 0.000000 ns (8,20) -> (8,20)
-Info:                Sink processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_LC.I0
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3  7.5  Source processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_LC.O
-Info:  1.8  9.2    Net processor.forwarding_unit.MEM_CSRR_SB_LUT4_I1_O[1] budget 0.000000 ns (8,20) -> (9,19)
-Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0_SB_LUT4_O_LC.I2
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 10.4  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0_SB_LUT4_O_LC.O
-Info:  3.1 13.5    Net processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0[3] budget 0.000000 ns (9,19) -> (9,15)
-Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.I3
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  0.9 14.4  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.O
-Info:  4.2 18.6    Net processor.mfwd2 budget 0.000000 ns (9,15) -> (12,4)
-Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.I3
-Info:                Defined in:
-Info:                  verilog/cpu.v:159.9-159.14
-Info:  0.9 19.5  Source processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.O
-Info:  1.8 21.3    Net processor.mem_fwd2_mux_out[0] budget 0.000000 ns (12,4) -> (12,4)
+Info:  1.2  7.4  Source processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8  9.1    Net processor.mem_fwd2_mux_out[0] budget 0.000000 ns (10,8) -> (11,7)
 Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:155.15-155.31
-Info:  1.2 22.5  Source processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.O
-Info:  3.5 26.0    Net data_WrData[0] budget 0.000000 ns (12,4) -> (17,6)
+Info:  1.2 10.3  Source processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  4.1 14.5    Net data_WrData[0] budget 0.000000 ns (11,7) -> (17,12)
 Info:                Sink processor.alu_mux.out_SB_LUT4_O_31_LC.I2
 Info:                Defined in:
 Info:                  toplevel.v:32.13-32.24
-Info:  1.2 27.2  Source processor.alu_mux.out_SB_LUT4_O_31_LC.O
-Info:  2.4 29.6    Net processor.alu_mux_out[0] budget 3.931000 ns (17,6) -> (18,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
+Info:  1.2 15.7  Source processor.alu_mux.out_SB_LUT4_O_31_LC.O
+Info:  3.1 18.7    Net processor.alu_mux_out[0] budget 3.647000 ns (17,12) -> (18,15)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_1_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:131.15-131.26
-Info:  0.9 30.4  Source processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
-Info:  2.4 32.9    Net processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I1_SB_LUT4_O_I1[0] budget 3.931000 ns (18,4) -> (17,5)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_LC.I2
+Info:  1.2 20.0  Source processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_1_LC.O
+Info:  1.8 21.7    Net processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_I2[0] budget 3.647000 ns (18,15) -> (18,15)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_O_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 34.1  Source processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_1_LC.O
-Info:  1.8 35.8    Net processor.alu_main.ALUOut_SB_LUT4_O_7_I1_SB_LUT4_O_1_I3_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I2_O[0] budget 3.931000 ns (17,5) -> (17,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_I1_SB_LUT4_O_LC.I1
+Info:  1.3 23.0  Source processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_O_LC.O
+Info:  1.8 24.8    Net processor.alu_main.ALUOut_SB_LUT4_O_24_I0_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I1_SB_LUT4_I0_O[2] budget 3.647000 ns (18,15) -> (18,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.I2
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 37.1  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_I1_SB_LUT4_O_LC.O
-Info:  1.8 38.8    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_I0[1] budget 3.931000 ns (17,4) -> (17,4)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_LC.I1
+Info:  1.2 26.0  Source processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.O
+Info:  2.8 28.8    Net processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_I0[0] budget 3.647000 ns (18,14) -> (15,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_LC.I0
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 40.0  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1_LC.O
-Info:  1.8 41.8    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_I2[0] budget 3.931000 ns (17,4) -> (16,5)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_LC.I2
+Info:  1.3 30.1  Source processor.alu_main.ALUOut_SB_LUT4_O_20_I1_SB_LUT4_O_1_LC.O
+Info:  3.0 33.1    Net processor.alu_main.ALUOut_SB_LUT4_O_12_I2[0] budget 3.647000 ns (15,14) -> (15,17)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_20_LC.I1
 Info:                Defined in:
 Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 43.0  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I0_SB_LUT4_O_2_LC.O
-Info:  3.0 46.0    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I0[0] budget 3.931000 ns (16,5) -> (16,11)
-Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_LC.I0
-Info:                Defined in:
-Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3 47.3  Source processor.alu_main.ALUOut_SB_LUT4_O_6_LC.O
-Info:  3.1 50.3    Net processor.alu_result[17] budget 4.272000 ns (16,11) -> (16,16)
-Info:                Sink processor.lui_mux.out_SB_LUT4_O_14_LC.I1
+Info:  1.2 34.3  Source processor.alu_main.ALUOut_SB_LUT4_O_20_LC.O
+Info:  1.8 36.1    Net processor.alu_result[19] budget 3.647000 ns (15,17) -> (14,17)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.I2
 Info:                Defined in:
 Info:                  verilog/cpu.v:135.15-135.25
-Info:  1.2 51.6  Source processor.lui_mux.out_SB_LUT4_O_14_LC.O
-Info:  1.8 53.3    Net data_addr[17] budget 4.272000 ns (16,16) -> (17,17)
-Info:                Sink data_mem_inst.addr_buf_SB_DFFE_Q_14_DFFLC.I0
+Info:  1.2 37.3  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_I0_SB_LUT4_O_3_LC.O
+Info:  3.1 40.3    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_I0[0] budget 3.647000 ns (14,17) -> (14,13)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 41.6  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_2_LC.O
+Info:  2.4 44.0    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_I0[0] budget 3.647000 ns (14,13) -> (14,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 45.3  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2_SB_LUT4_O_LC.O
+Info:  1.8 47.1    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_I2[2] budget 3.647000 ns (14,16) -> (13,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_LC.I2
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 48.3  Source processor.alu_main.Branch_Enable_SB_LUT4_O_I1_SB_LUT4_O_1_LC.O
+Info:  1.8 50.0    Net processor.alu_main.Branch_Enable_SB_LUT4_O_I1[3] budget 3.647000 ns (13,16) -> (13,16)
+Info:                Sink processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.8 50.9  Setup processor.alu_main.Branch_Enable_SB_LUT4_O_LC.I3
+Info: 18.3 ns logic, 32.6 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk_proc_$glb_clk' -> '<async>':
+Info: curr total
+Info:  1.4  1.4  Source processor.ex_mem_reg.data_out_SB_DFF_Q_14_DFFLC.O
+Info:  1.8  3.2    Net processor.ex_mem_out[140] budget 0.000000 ns (2,16) -> (1,16)
+Info:                Sink processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.I1
+Info:                Defined in:
+Info:                  verilog/cpu.v:92.16-92.26
+Info:  1.2  4.4  Source processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:  1.8  6.1    Net processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3[2] budget 0.000000 ns (1,16) -> (1,17)
+Info:                Sink processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.9  7.0  Source processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
+Info:  1.8  8.8    Net processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O[0] budget 0.000000 ns (1,17) -> (1,18)
+Info:                Sink processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O_SB_LUT4_I2_LC.I1
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 10.0  Source processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O_SB_LUT4_I2_LC.O
+Info:  3.4 13.4    Net processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0[0] budget 0.000000 ns (1,18) -> (9,18)
+Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 14.7  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.O
+Info:  4.2 18.9    Net processor.mfwd2 budget 0.000000 ns (9,18) -> (10,6)
+Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_26_LC.I3
+Info:                Defined in:
+Info:                  verilog/cpu.v:159.9-159.14
+Info:  0.9 19.8  Source processor.mem_fwd2_mux.out_SB_LUT4_O_26_LC.O
+Info:  1.8 21.6    Net processor.mem_fwd2_mux_out[5] budget 0.000000 ns (10,6) -> (10,6)
+Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_26_LC.I1
+Info:                Defined in:
+Info:                  verilog/cpu.v:155.15-155.31
+Info:  1.2 22.8  Source processor.wb_fwd2_mux.out_SB_LUT4_O_26_LC.O
+Info:  3.1 25.9    Net data_WrData[5] budget 0.000000 ns (10,6) -> (11,11)
+Info:                Sink processor.alu_mux.out_SB_LUT4_O_26_LC.I1
+Info:                Defined in:
+Info:                  toplevel.v:32.13-32.24
+Info:  1.2 27.1  Source processor.alu_mux.out_SB_LUT4_O_26_LC.O
+Info:  5.2 32.3    Net processor.alu_mux_out[5] budget 9.232000 ns (11,11) -> (25,15)
+Info:                Sink processor.alu_main.alu_sub.SB_MAC16_adder_DSP.B_5
+Info:                Defined in:
+Info:                  verilog/cpu.v:131.15-131.26
+Info:  0.1 32.4  Setup processor.alu_main.alu_sub.SB_MAC16_adder_DSP.B_5
+Info: 9.4 ns logic, 23.0 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk_proc_$glb_clk' -> 'posedge clk_$glb_clk':
+Info: curr total
+Info:  1.4  1.4  Source processor.ex_mem_reg.data_out_SB_DFF_Q_14_DFFLC.O
+Info:  1.8  3.2    Net processor.ex_mem_out[140] budget 0.000000 ns (2,16) -> (1,16)
+Info:                Sink processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.I1
+Info:                Defined in:
+Info:                  verilog/cpu.v:92.16-92.26
+Info:  1.2  4.4  Source processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:  1.8  6.1    Net processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_I3[2] budget 0.000000 ns (1,16) -> (1,17)
+Info:                Sink processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.9  7.0  Source processor.forwarding_unit.MEM_fwd1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
+Info:  1.8  8.8    Net processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O[0] budget 0.000000 ns (1,17) -> (1,18)
+Info:                Sink processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O_SB_LUT4_I2_LC.I1
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 10.0  Source processor.forwarding_unit.MEM_RegWrite_SB_LUT4_I2_O_SB_LUT4_I2_LC.O
+Info:  3.4 13.4    Net processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_I0[0] budget 0.000000 ns (1,18) -> (9,18)
+Info:                Sink processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 14.7  Source processor.forwarding_unit.MEM_fwd2_SB_LUT4_O_LC.O
+Info:  3.7 18.4    Net processor.mfwd2 budget 0.000000 ns (9,18) -> (10,8)
+Info:                Sink processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.I3
+Info:                Defined in:
+Info:                  verilog/cpu.v:159.9-159.14
+Info:  0.9 19.3  Source processor.mem_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  1.8 21.0    Net processor.mem_fwd2_mux_out[0] budget 0.000000 ns (10,8) -> (11,7)
+Info:                Sink processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.I2
+Info:                Defined in:
+Info:                  verilog/cpu.v:155.15-155.31
+Info:  1.2 22.2  Source processor.wb_fwd2_mux.out_SB_LUT4_O_31_LC.O
+Info:  4.1 26.4    Net data_WrData[0] budget 0.000000 ns (11,7) -> (17,12)
+Info:                Sink processor.alu_mux.out_SB_LUT4_O_31_LC.I2
+Info:                Defined in:
+Info:                  toplevel.v:32.13-32.24
+Info:  1.2 27.6  Source processor.alu_mux.out_SB_LUT4_O_31_LC.O
+Info:  3.6 31.2    Net processor.alu_mux_out[0] budget 3.647000 ns (17,12) -> (18,18)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_5_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  verilog/cpu.v:131.15-131.26
+Info:  0.9 32.0  Source processor.alu_main.ALUOut_SB_LUT4_O_5_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:  1.8 33.8    Net processor.alu_main.ALUOut_SB_LUT4_O_5_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2[0] budget 3.647000 ns (18,18) -> (18,17)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_16_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_I2_I1_SB_LUT4_I1_O_SB_LUT4_O_LC.I1
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 35.0  Source processor.alu_main.ALUOut_SB_LUT4_O_16_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_I2_I1_SB_LUT4_I1_O_SB_LUT4_O_LC.O
+Info:  1.8 36.8    Net processor.alu_main.ALUOut_SB_LUT4_O_16_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O_I1_SB_LUT4_I2_I1_SB_LUT4_I1_O[0] budget 3.647000 ns (18,17) -> (17,17)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 38.1  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:  3.0 41.0    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_I3[2] budget 3.647000 ns (17,17) -> (15,14)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.9 41.9  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0_SB_LUT4_O_LC.O
+Info:  2.4 44.3    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_I0[0] budget 3.647000 ns (15,14) -> (14,12)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_LC.I0
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.3 45.6  Source processor.alu_main.ALUOut_SB_LUT4_O_6_I1_SB_LUT4_O_1_LC.O
+Info:  3.0 48.6    Net processor.alu_main.ALUOut_SB_LUT4_O_6_I1[0] budget 3.647000 ns (14,12) -> (14,16)
+Info:                Sink processor.alu_main.ALUOut_SB_LUT4_O_6_LC.I1
+Info:                Defined in:
+Info:                  /usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  1.2 49.8  Source processor.alu_main.ALUOut_SB_LUT4_O_6_LC.O
+Info:  1.8 51.6    Net processor.alu_result[20] budget 4.299000 ns (14,16) -> (13,17)
+Info:                Sink processor.lui_mux.out_SB_LUT4_O_11_LC.I1
+Info:                Defined in:
+Info:                  verilog/cpu.v:135.15-135.25
+Info:  1.2 52.8  Source processor.lui_mux.out_SB_LUT4_O_11_LC.O
+Info:  3.0 55.8    Net data_addr[20] budget 4.299000 ns (13,17) -> (14,21)
+Info:                Sink data_mem_inst.addr_buf_SB_DFFE_Q_11_DFFLC.I0
 Info:                Defined in:
 Info:                  toplevel.v:31.13-31.22
-Info:  1.2 54.6  Setup data_mem_inst.addr_buf_SB_DFFE_Q_14_DFFLC.I0
-Info: 18.8 ns logic, 35.8 ns routing
+Info:  1.2 57.0  Setup data_mem_inst.addr_buf_SB_DFFE_Q_11_DFFLC.I0
+Info: 18.5 ns logic, 38.5 ns routing
 
-Info: Max frequency for clock 'clk_proc_$glb_clk': 16.70 MHz (PASS at 12.00 MHz)
-Info: Max frequency for clock      'clk_$glb_clk': 23.48 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'clk_proc_$glb_clk': 15.94 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock      'clk_$glb_clk': 22.16 MHz (PASS at 12.00 MHz)
 Info: Max frequency for clock      'pll_$glb_clk': 251.57 MHz (PASS at 30.02 MHz)
 
-Info: Max delay <async>                   -> posedge clk_$glb_clk     : 22.04 ns
-Info: Max delay <async>                   -> posedge clk_proc_$glb_clk: 30.01 ns
-Info: Max delay posedge clk_$glb_clk      -> <async>                  : 23.48 ns
-Info: Max delay posedge clk_$glb_clk      -> posedge clk_proc_$glb_clk: 48.26 ns
-Info: Max delay posedge clk_proc_$glb_clk -> <async>                  : 33.19 ns
-Info: Max delay posedge clk_proc_$glb_clk -> posedge clk_$glb_clk     : 54.57 ns
+Info: Max delay <async>                   -> posedge clk_$glb_clk     : 24.81 ns
+Info: Max delay <async>                   -> posedge clk_proc_$glb_clk: 33.80 ns
+Info: Max delay posedge clk_$glb_clk      -> <async>                  : 21.77 ns
+Info: Max delay posedge clk_$glb_clk      -> posedge clk_proc_$glb_clk: 50.87 ns
+Info: Max delay posedge clk_proc_$glb_clk -> <async>                  : 32.41 ns
+Info: Max delay posedge clk_proc_$glb_clk -> posedge clk_$glb_clk     : 57.01 ns
 
 Info: Slack histogram:
-Info:  legend: * represents 9 endpoint(s)
-Info:          + represents [1,9) endpoint(s)
-Info: [ 23440,  26273) |+
-Info: [ 26273,  29106) |+
-Info: [ 29106,  31939) |***+
-Info: [ 31939,  34772) |***+
-Info: [ 34772,  37605) |+
-Info: [ 37605,  40438) |+
-Info: [ 40438,  43271) |*+
-Info: [ 43271,  46104) |****+
-Info: [ 46104,  48937) |+
-Info: [ 48937,  51770) |**+
-Info: [ 51770,  54603) |***********+
-Info: [ 54603,  57436) |***********+
-Info: [ 57436,  60269) |*********+
-Info: [ 60269,  63102) |**************+
-Info: [ 63102,  65935) |******************************+
-Info: [ 65935,  68768) |*********************************+
-Info: [ 68768,  71601) |**************************+
-Info: [ 71601,  74434) |************************+
-Info: [ 74434,  77267) |************************+
-Info: [ 77267,  80100) |************************************************************ 
+Info:  legend: * represents 11 endpoint(s)
+Info:          + represents [1,11) endpoint(s)
+Info: [ 20579,  23555) |+
+Info: [ 23555,  26531) |+
+Info: [ 26531,  29507) |*+
+Info: [ 29507,  32483) |****+
+Info: [ 32483,  35459) |+
+Info: [ 35459,  38435) |+
+Info: [ 38435,  41411) |*+
+Info: [ 41411,  44387) |***+
+Info: [ 44387,  47363) |+
+Info: [ 47363,  50339) |+
+Info: [ 50339,  53315) |***+
+Info: [ 53315,  56291) |**********+
+Info: [ 56291,  59267) |****************+
+Info: [ 59267,  62243) |*****+
+Info: [ 62243,  65219) |**************************+
+Info: [ 65219,  68195) |*****************************+
+Info: [ 68195,  71171) |**********************************+
+Info: [ 71171,  74147) |**************+
+Info: [ 74147,  77123) |********************+
+Info: [ 77123,  80099) |************************************************************ 
 
 Info: Program finished normally.
