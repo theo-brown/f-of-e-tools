@@ -5,7 +5,7 @@
  */
 
 module top (led);
-	output reg	led;
+	output reg[7:0] led;
 
 	wire		clk_proc;
 	wire		data_clk_stall;
@@ -19,12 +19,10 @@ module top (led);
 			   .CLKHF(hfosc));
 
 	pll pll_inst (hfosc, pll);
-
-
+	
 	SB_DFF dividebytwo_dff (.Q(clk),	// output clk
 				.C(pll),	// input from pll
 				.D(~clk));
-
 	/*
 	 *	Memory interface
 	 */
