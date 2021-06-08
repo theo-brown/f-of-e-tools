@@ -5,7 +5,7 @@
  */
 
 module top (led);
-	output reg[7:0] led;
+	output [7:0] led;
 
 	wire		clk_proc;
 	wire		data_clk_stall;
