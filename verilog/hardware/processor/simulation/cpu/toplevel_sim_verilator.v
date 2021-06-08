@@ -80,7 +80,6 @@ module top (input reg clk, output out_value);
 	);
 
 	instruction_memory inst_mem( 
-		.clk(clk),
 		.addr(inst_in), 
 		.out(inst_out)
 	);
