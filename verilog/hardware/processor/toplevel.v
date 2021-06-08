@@ -5,14 +5,14 @@
  */
 
 module top (led);
-	output reg	led;
+	output reg [7:0]	led;
 
 	wire		clk_proc;
 	wire		data_clk_stall;
-	
+
 	wire		clk;
 	wire		hfosc;
-	wire 		pll;	
+	wire 		pll;
 
 	SB_HFOSC OSCInst0 (.CLKHFEN(1),
 			   .CLKHFPU(1),
@@ -47,8 +47,8 @@ module top (led);
 		.data_mem_sign_mask(data_sign_mask)
 	);
 
-	instruction_memory inst_mem( 
-		.addr(inst_in), 
+	instruction_memory inst_mem(
+		.addr(inst_in),
 		.out(inst_out)
 	);
 
@@ -56,8 +56,8 @@ module top (led);
 			.clk(clk),
 			.addr(data_addr),
 			.write_data(data_WrData),
-			.memwrite(data_memwrite), 
-			.memread(data_memread), 
+			.memwrite(data_memwrite),
+			.memread(data_memread),
 			.read_data(data_out),
 			.sign_mask(data_sign_mask),
 			.led(led),
