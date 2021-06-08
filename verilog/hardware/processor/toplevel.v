@@ -12,7 +12,7 @@ module top (led);
 	
 	wire		clk;
 	wire		hfosc;
-	wire 		pll;	
+	wire		pll;	
 
 	SB_HFOSC OSCInst0 (.CLKHFEN(1),
 			   .CLKHFPU(1),
@@ -20,7 +20,10 @@ module top (led);
 
 	pll pll_inst (hfosc, pll);
 
-	dividebytwo freq_div (pll, clk);
+
+	SB_DFF dividebytwo_dff (.Q(clk),	// output clk
+				.C(pll),	// input from pll
+				.D(~clk));
 
 	/*
 	 *	Memory interface
