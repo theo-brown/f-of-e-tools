@@ -65,10 +65,13 @@ module branch_predictor(
 	/*
 	 *	internal state
 	 */
-	reg [1:0]	s;
-	reg 			p;
-	reg [5:0] cpc;
-	reg [31:0] spc;
+	reg [1:0]	s0;
+	reg [1:0]	s1;
+	reg [1:0]	s2;
+	reg [1:0]	s3;
+	reg [1:0]	h;
+	reg 		p;
+
 	reg		branch_mem_sig_reg;
 
 	/*
@@ -82,11 +85,13 @@ module branch_predictor(
 	 *	modules in the design and to thereby set the values.
 	 */
 	initial begin
-		s = 2'b00;
+		s0 = 2'b00;
+		s1 = 2'b00;
+		s2 = 2'b00;
+		s3 = 2'b00;
+		h = 2'b00;
 		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
-		spc = 32'b00000010000000100000001000000010;
-		cpc = 6'b000000;
 	end
 
 	always @(negedge clk) begin
@@ -100,35 +105,29 @@ module branch_predictor(
 	 */
 	always @(posedge clk) begin
 		if (branch_mem_sig_reg) begin
-			cpc <= in_addr[7:2];
-			spc[1] <= (spc[1]&spc[0]) | (spc[0]&actual_branch_decision) | (spc[1]&actual_branch_decision);
-			spc[0] <= (spc[1]&(!s[0])) | ((!spc[0])&actual_branch_decision) | (spc[1]&actual_branch_decision);
-			case (cpc)
-				spc[15:10] : begin
-					s <= spc[9:8];
-					spc[15:8] <= spc[7:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= s;
-				end
-				spc[23:18] : begin
-					s <= spc[17:16];
-					spc[23:8] <= spc[15:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= s;
-				end
-				spc[31:26] :	begin
-					s <= spc[25:24];
-					spc[31:8] <= spc[23:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= s;
-				end
-				default : begin
-					spc[31:8] <= spc[23:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= 2'b10;
-				end
-			endcase
-			p <= spc[1:0];
+			h[1] <= h[0];
+			h[0] <= actual_branch_decision;
+			// change these to case statements?
+			if (h == 2'b00) begin
+				s0[1] <= (s0[1]&s0[0]) | (s0[0]&actual_branch_decision) | (s0[1]&actual_branch_decision);
+				s0[0] <= (s0[1]&(!s0[0])) | ((!s0[0])&actual_branch_decision) | (s0[1]&actual_branch_decision);
+				p <= s0[1];
+			end
+			if (h == 2'b01) begin
+				s1[1] <= (s1[1]&s1[0]) | (s1[0]&actual_branch_decision) | (s1[1]&actual_branch_decision);
+				s1[0] <= (s1[1]&(!s1[0])) | ((!s1[0])&actual_branch_decision) | (s1[1]&actual_branch_decision);
+				p <= s1[1];
+			end
+			if (h == 2'b10) begin
+				s2[1] <= (s2[1]&s2[0]) | (s2[0]&actual_branch_decision) | (s2[1]&actual_branch_decision);
+				s2[0] <= (s2[1]&(!s2[0])) | ((!s2[0])&actual_branch_decision) | (s2[1]&actual_branch_decision);
+				p <= s2[1];
+			end
+			if (h == 2'b11) begin
+				s3[1] <= (s3[1]&s3[0]) | (s3[0]&actual_branch_decision) | (s3[1]&actual_branch_decision);
+				s3[0] <= (s3[1]&(!s3[0])) | ((!s3[0])&actual_branch_decision) | (s3[1]&actual_branch_decision);
+				p <= s3[1];
+			end
 		end
 	end
 
