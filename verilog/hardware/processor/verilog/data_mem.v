@@ -6,7 +6,7 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 	input			memread;
 	input [3:0]		sign_mask;
 	output reg [31:0]	read_data;
-	output reg		led;
+	output reg [7:0]		led;
 	output reg		clk_stall;	//Sets the clock high
 
 	// States
@@ -119,7 +119,7 @@ module data_mem (clk, addr, write_data, memwrite, memread, sign_mask, read_data,
 				
 				if(addr_buf == 32'h2000)
 				begin
-					led <= write_data_buffer[0];
+					led <= write_data_buffer[7:0];
 				end
 
 				casez ({sign_mask_buf[2:1], addr_buf_byte_offset[1:0]})
