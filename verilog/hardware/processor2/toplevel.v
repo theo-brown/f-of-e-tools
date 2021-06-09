@@ -42,10 +42,7 @@ module top (led);
 	wire		clk_proc;
 	wire		data_clk_stall;
 
-	wire 		refclk;
 	wire		clk;
-	wire		locked;
-	wire		pclk;
 	reg		ENCLKHF		= 1'b1;	// Plock enable
 	reg		CLKHF_POWERUP	= 1'b1;	// Power up the HFOSC circuit
 
@@ -53,41 +50,11 @@ module top (led);
 	/*
 	 *	Use the iCE40's hard primitive for the clock source.
 	 */
-	SB_HFOSC #(.CLKHF_DIV("0b00")) OSCInst0 (
- 		.CLKHFEN(ENCLKHF),
- 		.CLKHFPU(CLKHF_POWERUP),
- 		.CLKHF(refclk)
- 	);
-
-
-	// try and set up a PLL
-	// 48MHz input, 20Mhz output, too high for processor
-	// build a divider circuit
-
-	SB_PLL40_CORE #(
-									.FEEDBACK_PATH("SIMPLE"),
-									.DIVR(4'b0010),         // DIVR =  2
-									.DIVF(7'b0101011),      // DIVF = 43
-									.DIVQ(3'b101),          // DIVQ =  5
-									.FILTER_RANGE(3'b001)   // FILTER_RANGE = 1
-	        ) uut (
-	                .LOCK(locked),
-	                .RESETB(1'b1),
-	                .BYPASS(1'b0),
-	                .REFERENCECLK(refclk),
-	                .PLLOUTCORE(pclk)
-	                );
-
-		// divide pclk by 2 with DFF, need to assign this to global buffer
-		// although yosys does this automatically
-		// clk: 10MHz output
-
-	SB_DFF SB_DFF_inst (
-												.Q(clk), 	// output clk
-												.C(pclk),	// input clock from pll
-												.D(~clk) 	// D = not clk - not Q
-												);
-
+	SB_HFOSC #(.CLKHF_DIV("0b11")) OSCInst0 (
+		.CLKHFEN(ENCLKHF),
+		.CLKHFPU(CLKHF_POWERUP),
+		.CLKHF(clk)
+	);
 
 	/*
 	 *	Memory interface
