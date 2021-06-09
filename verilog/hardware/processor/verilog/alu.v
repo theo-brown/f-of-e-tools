@@ -70,6 +70,28 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 	 *	the design should instead use a reset signal going to
 	 *	modules in the design.
 	 */
+	wire [31:0] adder_o;
+	adder alu_adder(
+		.input1(A),
+		.input2(B),
+		.out(adder_o)
+		);
+	
+	wire [31:0] sub_o;
+	wire sub_co;
+	sub alu_sub(
+		.input1(A),
+		.input2(B),
+		.out(sub_o),
+		.co(sub_co)
+	);
+
+	wire [31:0] xor_o;
+	assign xor_o = A^B;
+	
+	wire [31:0] lessthan;
+	assign lessthan = (sub_co & (xor_o[31])) | (sub_o[31] & ~(xor_o[31]));
+
 	initial begin
 		ALUOut = 32'b0;
 		Branch_Enable = 1'b0;
@@ -90,17 +112,18 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 			/*
 			 *	ADD (the fields also match AUIPC, all loads, all stores, and ADDI)
 			 */
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_ADD:	ALUOut = A + B;
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_ADD:	ALUOut = adder_o;
 
 			/*
 			 *	SUBTRACT (the fields also matches all branches)
 			 */
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SUB:	ALUOut = A - B;
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SUB:	ALUOut = sub_o;
 
 			/*
 			 *	SLT (the fields also matches all the other SLT variants)
 			 */
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SLT:	ALUOut = $signed(A) < $signed(B) ? 32'b1 : 32'b0;
+			/*`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SLT:	ALUOut = $signed(A) < $signed(B) ? 32'b1 : 32'b0;*/
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_SLT:     ALUOut = lessthan;
 
 			/*
 			 *	SRL (the fields also matches the other SRL variants)
@@ -120,7 +143,7 @@ module alu(ALUctl, A, B, ALUOut, Branch_Enable);
 			/*
 			 *	XOR (the fields also match other XOR variants)
 			 */
-			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_XOR:	ALUOut = A ^ B;
+			`kSAIL_MICROARCHITECTURE_ALUCTL_3to0_XOR:	ALUOut = xor_o;
 
 			/*
 			 *	CSRRW  only
