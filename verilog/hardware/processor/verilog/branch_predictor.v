@@ -1,20 +1,25 @@
 /*
 	Authored 2018-2019, Ryan Voo.
+
 	All rights reserved.
 	Redistribution and use in source and binary forms, with or without
 	modification, are permitted provided that the following conditions
 	are met:
+
 	*	Redistributions of source code must retain the above
 		copyright notice, this list of conditions and the following
 		disclaimer.
+
 	*	Redistributions in binary form must reproduce the above
 		copyright notice, this list of conditions and the following
 		disclaimer in the documentation and/or other materials
 		provided with the distribution.
+
 	*	Neither the name of the author nor the names of its
 		contributors may be used to endorse or promote products
 		derived from this software without specific prior written
 		permission.
+
 	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
@@ -66,9 +71,7 @@ module branch_predictor(
 	 *	internal state
 	 */
 	reg [1:0]	s;
-	reg 			p;
-	reg [5:0] cpc;
-	reg [31:0] spc;
+
 	reg		branch_mem_sig_reg;
 
 	/*
@@ -83,10 +86,7 @@ module branch_predictor(
 	 */
 	initial begin
 		s = 2'b00;
-		p = 1'b0;
 		branch_mem_sig_reg = 1'b0;
-		spc = 32'b00000010000000100000001000000010;
-		cpc = 6'b000000;
 	end
 
 	always @(negedge clk) begin
@@ -100,38 +100,11 @@ module branch_predictor(
 	 */
 	always @(posedge clk) begin
 		if (branch_mem_sig_reg) begin
-			cpc <= in_addr[7:2];
-			spc[1] <= (spc[1]&spc[0]) | (spc[0]&actual_branch_decision) | (spc[1]&actual_branch_decision);
-			spc[0] <= (spc[1]&(!s[0])) | ((!spc[0])&actual_branch_decision) | (spc[1]&actual_branch_decision);
-			case (cpc)
-				spc[15:10] : begin
-					s <= spc[9:8];
-					spc[15:8] <= spc[7:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= s;
-				end
-				spc[23:18] : begin
-					s <= spc[17:16];
-					spc[23:8] <= spc[15:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= s;
-				end
-				spc[31:26] :	begin
-					s <= spc[25:24];
-					spc[31:8] <= spc[23:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= s;
-				end
-				default : begin
-					spc[31:8] <= spc[23:0];
-					spc[7:2] <= cpc;
-					spc[1:0] <= 2'b10;
-				end
-			endcase
-			p <= spc[1:0];
+			s[1] <= (s[1]&s[0]) | (s[0]&actual_branch_decision) | (s[1]&actual_branch_decision);
+			s[0] <= (s[1]&(!s[0])) | ((!s[0])&actual_branch_decision) | (s[1]&actual_branch_decision);
 		end
 	end
 
 	assign branch_addr = in_addr + offset;
-	assign prediction = p & branch_decode_sig;
+	assign prediction = s[1] & branch_decode_sig;
 endmodule
