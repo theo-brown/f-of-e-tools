@@ -50,8 +50,8 @@ def time_per_sort(filename):
     return 1/sorts_per_second(filename)
 
 
-#file = "blink_24pll_A2_800hz.csv"
-file = "sail_11pll_D_A2_2khz.csv"
+#file = "sail_6_A2_2khz.csv"
+file = "dff_8_timing.csv" 
 print(sorts_per_second(file))
 print(time_per_sort(file))
 plot_digital(file)

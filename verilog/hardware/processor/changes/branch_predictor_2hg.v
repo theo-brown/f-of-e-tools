@@ -108,6 +108,9 @@ module branch_predictor(
 			h[1] <= h[0];
 			h[0] <= actual_branch_decision;
 			// change these to case statements?
+			// this is wrong because it updates the wrong state machine?
+			// need to select and update state macine before updating history
+			// then after updating history, select new state machine and make prediction
 			if (h == 2'b00) begin
 				s0[1] <= (s0[1]&s0[0]) | (s0[0]&actual_branch_decision) | (s0[1]&actual_branch_decision);
 				s0[0] <= (s0[1]&(!s0[0])) | ((!s0[0])&actual_branch_decision) | (s0[1]&actual_branch_decision);
